@@ -1,0 +1,31 @@
+.grid {
+  border: solid 1px #e7e7e7;
+}
+
+.grid__row {
+  display: flex;
+  flex-direction: column;
+}
+
+.grid__item {
+  flex: 1 1 auto;
+  padding: 12px;
+  border: solid 1px #e7e7e7;
+}
+
+@include mq(phone-wide,min){
+  .grid__row--sm {
+    flex-direction: row;
+  }
+}
+
+@include mq(tablet,min){
+  .grid__row--md {
+    flex-direction: row;
+  }
+}
+@include mq(tablet-wide,min){
+  .grid__row--lg {
+    flex-direction: row;
+  }
+}

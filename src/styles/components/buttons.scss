@@ -1,0 +1,27 @@
+.btn{
+  background: $btn-primary-bgcolor;
+  border:none;
+  border-radius: 20rem;
+  cursor: pointer;
+  color: $white;
+  font-family: GothamProMedium;
+&:hover{
+  color: rgba(255, 255, 255, 0.85);
+  background: $brn-primary-hover;
+}
+  &:focus{
+    outline: none;
+    box-shadow: $btn-primary-shadow;
+  }
+  &--primary{
+    font-size: $lg-h4;
+  }
+  &--nav{
+    font-size: $lg-h5;
+    padding: 0.8rem 2.4rem;
+  }
+  @include mq(phone-wide,min){
+
+  }
+
+}

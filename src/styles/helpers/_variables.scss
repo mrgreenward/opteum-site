@@ -1,0 +1,61 @@
+//colors
+$orange: #F8A56F;
+$orange--dark: #F26C51;
+
+$white: #FFFFFF;
+
+$blue--dark: #3D485B;
+$blue: #4D6AB4;
+$blue--light: #6CA1FA;
+$blue--lightest: #E7EBF9;
+
+$black: #000000;
+$gray--dark:#222222;
+$gray: #929292;
+$gray--light-primary: #C4C8CD;
+$gray--light-secondary:#C8CFD1;
+$gray--lightest: #EEEEEE;
+
+// breakpoints
+$breakpoints: (
+        "phone":        400px,
+        "phone-wide":   480px,
+        "phablet":      560px,
+        "tablet-small": 640px,
+        "tablet":       768px,
+        "tablet-wide":  1024px,
+        "desktop":      1248px,
+        "desktop-wide": 1440px
+);
+
+// typography
+
+//text
+$lg-logo: 2.8rem;
+$sm-logo: 2.3rem;
+
+$lg-h1: 4.4rem;
+$lg-h2: 2.3rem;
+$lg-h3: 1.9rem;
+$lg-h4: 1.6rem;
+$lg-h5: 1.4rem;
+$lg-sm: 1.1rem;
+
+$md-h1: 3.3rem;
+$md-h2: 2.0rem;
+$md-h3: 1.8rem;
+$md-h4: 1.6rem;
+$md-h5: 1.4rem;
+$md-sm: 1.1rem;
+
+$sm-h1: 2.4rem;
+$sm-h2: 1.6rem;
+$sm-h3: 1.6rem;
+$sm-h4: 1.6rem;
+$sm-h5: 1.4rem;
+$sm-sm: 1.2rem;
+
+
+$btn-primary-bgcolor : linear-gradient(45deg, #F8A56F 41.22%, #F26C51 85.22%, #F26C51 53%);
+$brn-primary-hover: linear-gradient(45deg, #f48436 41.22%, rgba(242, 108, 81, 0.7) 85.22%, rgba(242, 108, 81, 0.68) 53%);
+$btn-primary-shadow: inset 0 0 16px rgba(0, 0, 0, 0.33)

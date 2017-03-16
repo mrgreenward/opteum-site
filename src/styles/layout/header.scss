@@ -1,0 +1,16 @@
+.header{
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+  justify-content: space-between;
+  &__link{
+    font-family: ProximaNova-Bold;
+    color: $black;
+    font-size: $lg-logo;
+  }
+  &__burger{
+    @include mq(tablet,min){
+      display: none;
+    }
+  }
+}
