@@ -1,3 +1,21 @@
 .b-page__section{
-  padding: 0 1.6rem;
+  padding: 2rem 1.6rem;
+  border-bottom:1px solid $gray--lightest;
+ &--jumbotron{
+   background: $blue--lightest;
+   padding: 3.5rem 1.6rem;
+ }
+  &--header{
+    padding: 0 1.6rem;
+  }
+}
+.section-title{
+  text-align: center;
+  font: $sm-h1 GothamProLight;
+  @include mq (tablet,min){
+    font-size: $md-h1;
+  }
+  @include mq (desktop,min){
+    font-size: $section-title;
+  }
 }

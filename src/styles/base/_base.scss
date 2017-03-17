@@ -5,11 +5,15 @@ html{
 }
 body{
   font-size: 1.4rem;
-  max-width: 1400px;
   height: 100%;
-  flex-direction: column;
-  margin: 0 auto;
 }
 .b-page{
-  padding: 2.4rem 0;
+  flex-direction: column;
+  margin: 0 auto;
+  max-width: 1400px;
+  height:100%;
+  padding: 1.5rem 0;
+}
+p{
+  margin: 1rem 0;
 }

@@ -1,12 +1,22 @@
 .header{
+  max-width: 100%;
   display: flex;
+  position: relative;
   flex-direction: row;
-  align-items: baseline;
+  align-items: center;
   justify-content: space-between;
+  flex-wrap: wrap;
+
   &__link{
     font-family: ProximaNova-Bold;
     color: $black;
     font-size: $lg-logo;
+    margin: 0 1.5rem;
+    margin-right: auto;
+  }
+  &__btn{
+    @include mq(tablet,min){
+    }
   }
   &__burger{
     @include mq(tablet,min){
@@ -14,3 +24,4 @@
     }
   }
 }
+

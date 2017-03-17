@@ -1,0 +1,55 @@
+.orange-text{
+  color: $orange;
+  line-height: 1.5;
+  text-align: right;
+}
+.img-finance{
+  width: 100%;
+}
+.img-block{
+  position: relative;
+  width: 823px;
+  margin: 3.5rem auto;
+  &__wrapper{
+    max-width: 823px;
+    max-height: 562px;
+    word-break: break-all;
+  }
+  &__arrow{
+    position: absolute;
+    width: 157px;
+  }
+}
+@include mq (desktop,min){
+  .img-block__arrow--1 .arrow, .img-block__arrow--2 .arrow{
+    background:url("/img/arrow.svg") no-repeat no-repeat;
+    width: 91px;
+    height: 17px;
+    position: absolute;
+    right: -50px;
+    top: -20px;
+  }
+  .img-block__arrow--1{
+    top: 178px;
+    left: -210px;
+  }
+  .img-block__arrow--2{
+    top: 350px;
+    left: -210px;
+  }
+  .img-block__arrow--3{
+    top: 236px;
+    right: -199px;
+    & > .orange-text{
+      text-align: left;
+    }
+    & > .arrow{
+      background:url("/img/arrow-right.svg") 0 0 no-repeat;
+      width: 180px;
+      height: 60px;
+      position: absolute;
+      right:13px;
+      top: -20px;
+    }
+  }
+}

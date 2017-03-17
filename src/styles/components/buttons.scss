@@ -1,10 +1,13 @@
 .btn{
   background: $btn-primary-bgcolor;
   border:none;
+  font-size: $md-h4;
   border-radius: 20rem;
   cursor: pointer;
   color: $white;
   font-family: GothamProMedium;
+  margin: 1.5rem;
+  padding: 0.8rem 2.4rem;
 &:hover{
   color: rgba(255, 255, 255, 0.85);
   background: $brn-primary-hover;
@@ -18,10 +21,14 @@
   }
   &--nav{
     font-size: $lg-h5;
-    padding: 0.8rem 2.4rem;
-  }
-  @include mq(phone-wide,min){
-
+    &:before{
+      font-family: FontAwesome;
+      content: "\f25a";
+      @include mq(phone-wide,min){
+        font-family: GothamProMedium;
+        content: "Демо-версия";
+      }
+    }
   }
 
 }

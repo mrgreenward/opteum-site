@@ -1,0 +1,57 @@
+.jumbotron{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: hidden;
+  word-break: break-word;
+  word-wrap: break-word;
+  &__text{
+    display: none;
+    font: $lg-h3 GothamProLight;
+    color: gray;
+    @include mq (tablet,min){
+      display: block;
+      font-size: $md-h3;
+    }
+    @include mq(desktop,min){
+      font-size: $lg-h3;
+    }
+  }
+  &__title{
+    max-width: 700px;
+    margin: 2rem 0;
+    text-align: center;
+    font: $sm-h1 GothamProLight;
+    color: $gray--dark;
+    @include mq(tablet,min){
+      font-size: $md-h1;
+    }
+    @include mq(desktop,min){
+      font-size: $lg-h1;
+    }
+  }
+  &__btn{
+    font-size: $sm-h2;
+    padding: 0.8em 2.2em;s
+    &:after{
+      font-family: FontAwesome;
+      margin-left: 1rem;
+      content: "\f0da";
+      color: $white;
+    }
+    @include mq(tablet,min){
+      font-size: $md-h3;
+    }
+    @include mq(desktop,min){
+      font-size: $lg-h3;
+    }
+  }
+  &__img{
+    max-width: 836px;
+    max-height: 560px;
+    margin-top: 3em;
+  }
+}
+.jumbotron-img{
+  width: 100%;
+}

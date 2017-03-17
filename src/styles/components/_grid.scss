@@ -1,16 +1,19 @@
 .grid {
-  border: solid 1px #e7e7e7;
+
 }
 
 .grid__row {
   display: flex;
   flex-direction: column;
+  flex-wrap: wrap;
+  &--nowrap{
+    flex-wrap: nowrap;
+  }
 }
 
 .grid__item {
   flex: 1 1 auto;
-  padding: 12px;
-  border: solid 1px #e7e7e7;
+  padding: 1.2rem;
 }
 
 @include mq(phone-wide,min){
