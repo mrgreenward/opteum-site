@@ -1,5 +1,5 @@
 .b-page__section{
-  padding: 2rem 1.6rem;
+  padding: 4rem 1.6rem;
   border-bottom:1px solid $gray--lightest;
  &--jumbotron{
    background: $blue--lightest;
@@ -17,5 +17,17 @@
   }
   @include mq (desktop,min){
     font-size: $section-title;
+  }
+  & sup{
+    color:$orange;
+    text-transform: uppercase;
+    vertical-align: text-top;
+    font: $md-sm GothamProMedium;
+    @include mq(tablet,min){
+      font-size: $sm-sm;
+    }
+    @include mq(desktop,min){
+      font-size: $lg-h5;
+    }
   }
 }

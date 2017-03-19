@@ -1,28 +1,100 @@
-.orange-text{
-  color: $orange;
-  line-height: 1.5;
-  text-align: right;
+.img-block{
+  position: relative;
+  max-width: 823px;
+  margin: 3.5rem auto;
+  &__wrapper{
+    word-break: break-all;
+  }
 }
 .img-finance{
   width: 100%;
 }
-.img-block{
-  position: relative;
-  width: 823px;
-  margin: 3.5rem auto;
-  &__wrapper{
-    max-width: 823px;
-    max-height: 562px;
-    word-break: break-all;
+.img-block__arrow{
+  display: none;
+}
+@include mq (tablet,min){
+  .orange-text{
+    font-family: GothamProLight;
+    color: $orange;
+    line-height: 1.5;
+    text-align: right;
   }
+.img-block{
+  max-width: 608px;
+  margin: 11rem auto;
   &__arrow{
+    display: block;
     position: absolute;
-    width: 157px;
+    width: 150px;
   }
 }
+  .img-block__arrow--1{
+    top: -72px;
+    left: -65px;
+    &:after{
+      content:"";
+      background:url("/img/arrow.svg") no-repeat no-repeat;
+      transform: rotate(26deg);
+      background-size: 100%;
+      width: 68px;
+      height: 31px;
+      position: absolute;
+      right: -78px;
+      top: 32px;
+    }
+  }
+
+  .img-block__arrow--2{
+    top: 411px;
+    left: -65px;
+    &:after{
+      content:"";
+      background:url("/img/arrow-right.svg") no-repeat no-repeat;
+      transform: rotate(152deg);
+      background-size: 100%;
+      width: 68px;
+      height: 31px;
+      position: absolute;
+      right: -72px;
+      top: -7px;
+    }
+  }
+  .img-block__arrow--3{
+    top: -75px;
+    right: -23px;
+    width: 165px;
+    & > .orange-text{
+      text-align: left;
+    }
+    &:after{
+      content: "";
+      background:url("/img/arrow-right.svg") 0 0 no-repeat;
+      transform: rotate(-26deg);
+      background-size: 100%;
+      width: 68px;
+      height: 31px;
+      position: absolute;
+      right: 173px;
+      top: 33px;
+    }
+  }
+
+}
 @include mq (desktop,min){
-  .img-block__arrow--1 .arrow, .img-block__arrow--2 .arrow{
+  .img-block{
+    max-width: 823px;
+    margin: 3.5rem auto;
+    &__arrow{
+      display: block;
+      position: absolute;
+      width: 157px;
+    }
+  }
+
+  .img-block__arrow--1:after, .img-block__arrow--2:after{
+    content:"";
     background:url("/img/arrow.svg") no-repeat no-repeat;
+    transform: rotate(0deg);
     width: 91px;
     height: 17px;
     position: absolute;
@@ -43,8 +115,10 @@
     & > .orange-text{
       text-align: left;
     }
-    & > .arrow{
+    &:after{
+      content: "";
       background:url("/img/arrow-right.svg") 0 0 no-repeat;
+      transform: rotate(0deg);
       width: 180px;
       height: 60px;
       position: absolute;

@@ -1,0 +1,85 @@
+
+  .img-overlay{
+    display: flex;
+    justify-content: center;
+    top: 30px;
+    position: relative;
+    width: 300px;
+    height: 268px;
+    margin: 3.5rem auto;
+    &__item{
+      position: absolute;
+      display:inline-block;
+      cursor: pointer;
+      width: 196px;
+      height: 268px;
+    }
+  }
+  .control-driver{
+    background: url("/img/driver-control.png")no-repeat;
+    background-size: 100%;
+    left: 0;
+  }
+  .control-rating{
+    background: url("/img/driver-rating.png")no-repeat;
+    background-size: 100%;
+    left: 88px;
+    top: -41px;
+  }
+
+@include mq (tablet,min){
+  .img-overlay{
+    width: 401px;
+    height: 324px;
+    &__item{
+      width: 224px;
+      height: 306px;
+    }
+  }
+  .control-driver{
+    left: 0;
+    transition: 1s;
+    &:hover{
+      transition: 1s;
+      left: -88px;
+    }
+  }
+  .control-rating{
+    transition: 1s;
+    left: 131px;
+    top: -45px;
+    &:hover{
+      transition: 1s;
+      left: 200px;
+      top:-22px;
+    }
+  }
+}
+ @include mq (desktop,min){
+   .img-overlay{
+     width: 439px;
+     height: 391px;
+     &__item{
+       width: 268px;
+       height: 366px;
+     }
+   }
+   .control-driver{
+     left: 0;
+     transition: 1s;
+     &:hover{
+       transition: 1s;
+       left: -70px;
+     }
+   }
+   .control-rating{
+     transition: 1s;
+     left: 155px;
+     top: -54px;
+     &:hover{
+       transition: 1s;
+       right: -120px;
+       top:-25px;
+     }
+   }
+ }

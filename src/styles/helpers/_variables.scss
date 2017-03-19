@@ -18,7 +18,7 @@ $gray--lightest: #EEEEEE;
 
 // breakpoints
 $breakpoints: (
-        "phone":        400px,
+        "phone":        320px,
         "phone-wide":   480px,
         "phablet":      560px,
         "tablet-small": 640px,
@@ -60,4 +60,5 @@ $sm-sm: 1.2rem;
 
 $btn-primary-bgcolor : linear-gradient(45deg, #F8A56F 41.22%, #F26C51 85.22%, #F26C51 53%);
 $brn-primary-hover: linear-gradient(45deg, #f48436 41.22%, rgba(242, 108, 81, 0.7) 85.22%, rgba(242, 108, 81, 0.68) 53%);
-$btn-primary-shadow: inset 0 0 16px rgba(0, 0, 0, 0.33)
+$btn-primary-shadow: inset 0 0 16px rgba(0, 0, 0, 0.33);
+$btn-active:rgba(238, 238, 238, 0.15);
