@@ -46,12 +46,31 @@
       font-size: $lg-h3;
     }
   }
-  &__img{
-    max-width: 836px;
-    max-height: 560px;
-    margin-top: 3em;
-  }
 }
 .jumbotron-img{
   width: 100%;
+}
+.img-jumbotron{
+  width: 100%;
+  height: 100%;
+  position: relative;
+  &__img{
+    position: relative;
+    z-index: 999;
+    max-width: 836px;
+    max-height:543px;
+    margin: 3em auto 1.5em auto;
+    box-shadow: $shadow-primary;
+  }
+}
+.line{
+  z-index: 9;
+  position: absolute;
+}
+.line-left{
+  top:308px;
+}
+.line-right{
+  @extend .line-left;
+  right: 0;
 }

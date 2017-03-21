@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="560px" height="121px" viewBox="0 0 560 121" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 39 (31667) - http://www.bohemiancoding.com/sketch -->
+    <title>Group 89</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M0,94.6940384 C0,94.6940384 47.8811186,47.2217731 115.447226,47.2217731 C183.013334,47.2217731 219.421617,116.316968 316.057708,120.468201 C371.665465,122.856964 410.174893,83.8900709 453.787261,63.2950208 C511.294447,36.1384268 554.50653,23 554.50653,23" id="path-1"></path>
+        <filter x="-50%" y="-50%" width="200%" height="200%" filterUnits="objectBoundingBox" id="filter-2">
+            <feMorphology radius="1" operator="dilate" in="SourceAlpha" result="shadowSpreadOuter1"></feMorphology>
+            <feOffset dx="0" dy="16" in="shadowSpreadOuter1" result="shadowOffsetOuter1"></feOffset>
+            <feMorphology radius="1" operator="erode" in="SourceAlpha" result="shadowInner"></feMorphology>
+            <feOffset dx="0" dy="16" in="shadowInner" result="shadowInner"></feOffset>
+            <feComposite in="shadowOffsetOuter1" in2="shadowInner" operator="out" result="shadowOffsetOuter1"></feComposite>
+            <feGaussianBlur stdDeviation="2" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0.784313725   0 0 0 0 0.811764706   0 0 0 0 0.819607843  0 0 0 0.25 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="Главная" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g transform="translate(0.000000, -661.000000)" id="Group-82">
+            <g transform="translate(-5.000000, 96.000000)">
+                <g id="Group-88" transform="translate(0.000000, 544.000000)">
+                    <g id="Group-89" transform="translate(5.000000, 0.000000)">
+                        <g id="Group-29" transform="translate(172.000000, 58.000000)">
+                            <circle id="Oval-4" fill="#F8A56F" cx="12" cy="12" r="6"></circle>
+                            <circle id="Oval-4-Copy" stroke-opacity="0.3" stroke="#F8A56F" stroke-width="2" cx="12" cy="12" r="12"></circle>
+                        </g>
+                        <g id="Group-87">
+                            <g id="Line">
+                                <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
+                                <use stroke="#F8A56F" stroke-width="2" stroke-linecap="square" xlink:href="#path-1"></use>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
