@@ -49,6 +49,7 @@
 }
 .jumbotron-img{
   width: 100%;
+  box-shadow: $shadow-primary;
 }
 .img-jumbotron{
   width: 100%;
@@ -58,19 +59,21 @@
     position: relative;
     z-index: 999;
     max-width: 836px;
-    max-height:543px;
+    width: 85%;
     margin: 3em auto 1.5em auto;
-    box-shadow: $shadow-primary;
   }
 }
 .line{
-  z-index: 9;
-  position: absolute;
+  display: none;
 }
-.line-left{
-  top:308px;
-}
-.line-right{
-  @extend .line-left;
-  right: 0;
+@include mq(desktop,min){
+  .line{
+    display: block;
+    z-index: 9;
+    position: absolute;
+    top:308px;
+  }
+  .line-right{
+    right: 0;
+  }
 }

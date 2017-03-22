@@ -14,6 +14,40 @@
       width: 196px;
       height: 268px;
     }
+    &__arrow{
+      position: absolute;
+      background: url("/img/arrow.svg")no-repeat;
+      background-size: 100%;
+      top:-26px;
+      left:68px;
+      max-width: 152px;
+      max-height: 56px;
+    }
+  }
+  .img-overlay--marketing{
+    min-width:50%;
+    height: 221px;
+    & .img-overlay__item{
+      height: 165px;
+      box-shadow: $shadow-primary;
+    }
+    & .img-overlay__arrow{
+      width:69px;
+      height: 26px;
+    }
+  }
+  .img-regist{
+    background: url("/img/registration.png")no-repeat;
+    background-size: 100%;
+    left: 0;
+    width:118px;
+  }
+  .img-exchange{
+    background: url("/img/drivers-exchange.png")no-repeat;
+    background-size: 100%;
+    left: 15%;
+    top: 8px;
+    width: 249px;
   }
   .control-driver{
     background: url("/img/driver-control.png")no-repeat;
@@ -27,7 +61,7 @@
     top: -41px;
   }
 
-@include mq (tablet,min){
+@include mq (tablet-small,min){
   .img-overlay{
     width: 401px;
     height: 324px;
@@ -54,11 +88,42 @@
       top:-22px;
     }
   }
+  .img-overlay--marketing{
+    min-width:50%;
+    max-width: 65%;
+    height: 351px;
+    & .img-overlay__item{
+      height: 283px;
+    }
+    & .img-overlay__arrow{
+      top:-35px;
+      left:153px;
+      width:120px;
+      height: 44px;
+    }
+  }
+  .img-regist{
+    transition: 1s;
+    width:208px;
+    &:hover{
+      transition: 1s;
+      left: -20px;
+    }
+  }
+  .img-exchange{
+    left:27%;
+    width: 441px;
+  }
 }
+  @include mq (tablet,min){
+    .img-overlay--marketing{
+      min-width: 75%;
+    }
+  }
  @include mq (desktop,min){
    .img-overlay{
      width: 439px;
-     height: 391px;
+     height: 361px;
      &__item{
        width: 268px;
        height: 366px;
@@ -82,4 +147,34 @@
        top:-25px;
      }
    }
+   .img-overlay--marketing{
+     min-width:61%;
+     height: 440px;
+     & .img-overlay__item{
+       height: 367px;
+     }
+     & .img-overlay__arrow{
+       top:-25px;
+       left:165px;
+       width:120px;
+       height: 44px;
+       transform: rotate(20deg);
+       z-index: 999;
+     }
+   }
+   .img-regist{
+     transition: 1s;
+     width:262px;
+     height: 347px !important;
+     &:hover{
+       transition: 1s;
+       left: -20px;
+     }
+   }
+   .img-exchange{
+     left:27%;
+     width: 556px;
+     height: 367px !important;
+   }
+
  }

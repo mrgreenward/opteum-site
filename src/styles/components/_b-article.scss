@@ -33,8 +33,9 @@
     }
   }
   &__img--gadget{
-    width: 256px;
-    height: 504px;
+    max-width: 256px;
+    max-height: 504px;
+    margin: 0 auto;
     border-radius: 0 ;
   }
   &__img--icon{
@@ -43,6 +44,9 @@
     border-radius: 0;
     margin-bottom: 0;
     margin-top: 1em;
+  }
+  &__title{
+    font-size: $md-h4;
   }
   &__text{
     display: block;

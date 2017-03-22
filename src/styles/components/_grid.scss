@@ -4,13 +4,22 @@
   margin: 0 auto;
 }
 }
-
+.grid--desktop{
+  display: none;
+}
+.grid--taplet{
+  display: block;
+}
 .grid__row {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
+  align-items: center;
   &--nowrap{
     flex-wrap: nowrap;
+  }
+  &--align-top{
+    align-items: baseline;
   }
 }
 
@@ -28,6 +37,13 @@
 @include mq(tablet,min){
   .grid__row--md {
     flex-direction: row;
+  }
+  .grid--desktop{
+    display: block;
+    margin: 2.5rem 0;
+  }
+  .grid--taplet{
+    display: none;
   }
 }
 @include mq(tablet-wide,min){
