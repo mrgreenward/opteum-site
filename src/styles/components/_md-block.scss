@@ -1,0 +1,37 @@
+.md-block{
+  max-width: 763px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  border-bottom: 1px solid $gray--light-primary;
+  padding: 2.8rem;
+  &__text{
+    color: $gray;
+    line-height: 1.5;
+    font-weight: 100;
+    word-wrap: break-word;
+  }
+  &__img{
+    max-width: 323px;
+    margin: 2rem 2.4rem;
+    vertical-align: middle;
+  }
+}
+.md-block:not(first-child){
+  padding: 2.8rem;
+}
+.md-title{
+  font: $sm-h4 GothamProMedium ;
+  color: $black;
+  @include mq(tablet,min){
+    font-size: $md-h2;
+  }
+  @include mq(desktop,min){
+    font-size: $lg-h2;
+  }
+}
+.md-block.grid__row--item{
+  vertical-align: middle;
+}

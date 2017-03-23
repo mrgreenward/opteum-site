@@ -19,13 +19,16 @@
     flex-wrap: nowrap;
   }
   &--align-top{
-    align-items: baseline;
+    align-items: center;
   }
 }
 
 .grid__item {
   flex: 1 1 auto;
   padding: 1.2rem;
+  &--price-img{
+    display: none;
+  }
 }
 
 @include mq(phone-wide,min){
@@ -45,9 +48,17 @@
   .grid--taplet{
     display: none;
   }
+  .grid__row--align-top{
+    align-items: flex-start;
+  }
 }
 @include mq(tablet-wide,min){
   .grid__row--lg {
     flex-direction: row;
+  }
+}
+@include mq(desktop,min){
+  .grid__item--price-img{
+    display: block;
   }
 }

@@ -89,8 +89,7 @@
     }
   }
   .img-overlay--marketing{
-    min-width:50%;
-    max-width: 65%;
+    width:575px;
     height: 351px;
     & .img-overlay__item{
       height: 283px;
@@ -115,11 +114,6 @@
     width: 441px;
   }
 }
-  @include mq (tablet,min){
-    .img-overlay--marketing{
-      min-width: 75%;
-    }
-  }
  @include mq (desktop,min){
    .img-overlay{
      width: 439px;
@@ -148,7 +142,7 @@
      }
    }
    .img-overlay--marketing{
-     min-width:61%;
+     width: 829px;
      height: 440px;
      & .img-overlay__item{
        height: 367px;
