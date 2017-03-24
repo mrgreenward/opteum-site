@@ -2,7 +2,36 @@
 <div class="header">
     <a href="#" class="header__link">Opteum</a>
         <ul class="header__menu nav">
-            <li class="nav__item"><a href="#" class="nav__link">Продукты</a></li>
+            <script>
+                $(document).ready(function () {
+                    $('.nav__link, .arrow-down').DropDown();
+                });
+            </script>
+            <li class="nav__item">
+                <div class="dropdown-menu">
+                    <a href="#" class="nav__link">Продукты</a><div class="arrow-down"></div>
+                    <ul class="dropdown-menu__list dropdown-list">
+                        <li class="dropdown-list__item">
+                            <div class="item-container">
+                                    <a href="http://opteum.ru" class="item-container__link dropdown-list__link"><div class="item-container__icon">Т</div>Таксиграция</a>
+                                    <p class="item-container__text">Финансы</p>
+                            </div>
+                        </li>
+                        <li class="dropdown-list__item">
+                            <div class="item-container">
+                                <a href="#" class="item-container__link dropdown-list__link"> <div class="item-container__icon">Т</div>Таксиграция</a>
+                                <p class="item-container__text">Мотивация</p>
+                             </div>
+                        </li>
+                        <li class="dropdown-list__item">
+                            <div class="item-container">
+                                <a href="№" class="item-container__link dropdown-list__link"> <div class="item-container__icon">Т</div>Оптеум</a>
+                                <p class="item-container__text">Для классических таксопарков</p>
+                                </div>
+                        </li>
+                    </ul>
+                </div>
+            </li>
             <li class="nav__item"><a href="#" class="nav__link">Цены</a></li>
             <li class="nav__item"><a href="#" class="nav__link">Поддержка</a></li>
             <li class="nav__item"><a href="#" class="nav__link">Кейсы</a></li>

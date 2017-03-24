@@ -1,0 +1,59 @@
+.arrow-down{
+  cursor: pointer;
+  display: inline-block;
+  vertical-align: middle;
+  transition: all 0.2s;
+  width: 1em;
+  margin: 0 0.5em;
+  height: 1em;
+  background:url("../img/down-arrow.svg")no-repeat no-repeat;
+}
+.arrow-up{
+  cursor: pointer;
+  transform: rotate(180deg);
+  transition: all 0.2s;
+}
+.dropdown-list{
+  max-width: 302px;
+  width: 50%;
+  min-width: 150px;
+  z-index: 9999;
+  padding: 3.2rem;
+   position: absolute;
+   border: 1px solid gray;
+   word-wrap: break-word;
+   margin: 0.5em;
+   background-color: $white;
+   border: 1px solid rgba(201, 201, 201, 0.43);
+  display: none;
+  &__item{
+    text-align: left;
+    margin-bottom: 3.2rem;
+    &:last-child{
+      margin-bottom: 0;
+    }
+  }
+  &__link{
+    text-align: left;
+  }
+ }
+.item-container{
+  display: block;
+  &__icon{
+    display: inline-block;
+    float:left;
+    margin-right: 1.5rem;
+    background: $btn-primary-bgcolor;
+    padding: 1rem 1.1rem;
+    content: "T";
+    color:$white;
+    border-radius: 20px;
+  }
+  &__text{
+    font-size: $sm-sm;
+    font-weight: 100;
+    margin: 4px 0;
+    color:$gray--light-primary;
+    line-height: 1.2;
+  }
+}

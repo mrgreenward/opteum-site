@@ -1,10 +1,12 @@
 .nav{
-  display: none;
   text-align: center;
   margin: 0 auto;
   padding: 1rem 0;
   order: 3;
   justify-content: flex-start;
+  &--right{
+    float: right;
+  }
   @include mq(tablet,min){
     width: initial;
     order: inherit;
@@ -28,6 +30,9 @@
       border-bottom: 2px solid $orange--dark;
     }
   }
+}
+.header__menu{
+  display: none;
 }
 @include mq(phone,min){
   .nav__item{

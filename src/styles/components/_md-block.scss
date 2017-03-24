@@ -18,9 +18,35 @@
     margin: 2rem 2.4rem;
     vertical-align: middle;
   }
+  &:after{
+    display: none;
+    width: 10%;
+    content: '';
+    border-bottom: 1px solid $gray--light-primary;
+  }
+  @include mq(tablet,min){
+    padding: 5rem 2.8rem 0 2.8rem;
+    border-bottom: 0;
+    &:after{
+      margin-top: 5rem;
+      display: block;
+    }
+  }
+  @include mq(desktop,min){
+    padding: 8rem 2.8rem 0 2.8rem;
+    &:after{
+      margin-top: 8rem;
+    }
+  }
 }
-.md-block:not(first-child){
-  padding: 2.8rem;
+.section-title + .md-block{
+  padding-top: 0;
+}
+.md-block:last-child{
+  padding-bottom: 2rem;
+  &:after{
+    display: none;
+  }
 }
 .md-title{
   font: $sm-h4 GothamProMedium ;

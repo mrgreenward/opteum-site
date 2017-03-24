@@ -30,7 +30,9 @@
     display: none;
   }
 }
-
+.grid__item--mb-hide{
+  display: none;
+}
 @include mq(phone-wide,min){
   .grid__row--sm {
     flex-direction: row;
@@ -40,6 +42,9 @@
 @include mq(tablet,min){
   .grid__row--md {
     flex-direction: row;
+  }
+  .grid__item--mb-hide{
+    display: block;
   }
   .grid--desktop{
     display: block;
