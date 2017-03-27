@@ -1,16 +1,24 @@
 .form{
   max-width:768px;
-  margin: 0 auto;
+  margin: 5rem auto 0 auto;
   background: $white;
-  padding: 5.6rem 2.5rem;
+  padding: 4.2rem 2.5rem;
   &__wrap{
     max-width: 332px;
     margin: 5rem auto 0 auto;
+    display: flex;
+    flex-direction: column;
   }
   &__text{
     text-align: center;
     color: $gray;
-    font: $lg-h4 GothamProLight;
+    font: $sm-h5 GothamProLight;
+    @include mq (phone,min){
+      font-size: $lg-h4;
+    }
+  }
+  &__btn{
+    align-self: center;
   }
 }
 .field{
@@ -32,7 +40,7 @@
 }
 .input{
   min-height: 40px;
-  font: 16px GothamProBold;
+  font: 16px GothamProRegular;
   border: none;
   border-bottom: 1px solid $gray--light-primary;
   outline: none;
@@ -41,6 +49,9 @@
   }
   &:focus{
     border-bottom: 2px solid $orange;
+  }
+  &--error{
+    border-bottom: 1px solid red;
   }
 }
 .checkbox{

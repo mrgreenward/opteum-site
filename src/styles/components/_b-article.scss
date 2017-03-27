@@ -112,7 +112,6 @@
 .b-article--news{
 overflow: hidden;
   position: relative;
-  cursor: pointer;
   max-width: 342px;
   height: auto;
   align-items: flex-start;
@@ -162,6 +161,26 @@ overflow: hidden;
    }
   &:hover .b-article__img{
     transition: 1s;
+  }
+}
+.b-article--footer{
+  max-width: 165px;
+  min-width: 155px;
+& .b-article__title {
+  text-transform: uppercase;
+  margin-bottom: 3rem;
+}
+  & .b-article__item{
+    padding: .8rem 0;
+    &--border{
+      margin-top: 1.2rem;
+      padding-top: 1.2rem;
+      border-top: 1px solid $gray--light-primary;
+    }
+  }
+  & .b-article__text{
+    font:$md-h6 GothamProLight;
+    margin: 0;
   }
 }
 @include mq (tablet,min){

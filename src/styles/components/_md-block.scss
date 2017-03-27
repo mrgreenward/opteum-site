@@ -15,6 +15,7 @@
   }
   &__img{
     max-width: 323px;
+    max-height: 200px;
     margin: 2rem 2.4rem;
     vertical-align: middle;
   }
@@ -23,6 +24,10 @@
     width: 10%;
     content: '';
     border-bottom: 1px solid $gray--light-primary;
+  }
+  .md-block:last-child{
+    border: transparent;
+    padding-bottom: 0;
   }
   @include mq(tablet,min){
     padding: 5rem 2.8rem 0 2.8rem;
@@ -44,6 +49,7 @@
 }
 .md-block:last-child{
   padding-bottom: 2rem;
+  border-bottom: 0;
   &:after{
     display: none;
   }

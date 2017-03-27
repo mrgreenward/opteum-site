@@ -7,13 +7,6 @@
   justify-content: flex-end;
   flex-wrap: wrap;
 
-  &__link{
-    font-family: ProximaNova-Bold;
-    color: $black;
-    font-size: $lg-logo;
-    margin: 0 1.5rem;
-    margin-right: auto;
-  }
   &__btn{
     @include mq(tablet,min){
     }
@@ -24,4 +17,10 @@
     }
   }
 }
-
+.logo-company{
+  font-family: ProximaNova-Bold;
+  color: $black;
+  font-size: $lg-logo;
+  margin: 0 1.5rem 0 0;
+  margin-right: auto;
+}

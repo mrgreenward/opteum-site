@@ -21,6 +21,9 @@
   &--align-top{
     align-items: center;
   }
+  &--lined{
+    align-items: baseline;
+  }
 }
 
 .grid__item {
