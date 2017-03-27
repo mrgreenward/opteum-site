@@ -120,7 +120,7 @@ overflow: hidden;
   & .b-article__img{
     max-width: 342px;
     max-height: 183px;
-    transition: transform 0.3s ease-out, opacity 0.3s;
+    transition: 1s;
   }
   & .b-article__title{
     transition: 1s;
@@ -162,9 +162,12 @@ overflow: hidden;
   &:hover .b-article__img{
     transition: 1s;
   }
+  &:hover .b-article__img{
+    transition: 1s;
+  }
 }
 .b-article--footer{
-  max-width: 165px;
+  max-width: 189px;
   min-width: 155px;
 & .b-article__title {
   text-transform: uppercase;
@@ -172,15 +175,26 @@ overflow: hidden;
 }
   & .b-article__item{
     padding: .8rem 0;
-    &--border{
+    &--separate{
       margin-top: 1.2rem;
       padding-top: 1.2rem;
       border-top: 1px solid $gray--light-primary;
     }
+    &--contacts{
+      padding: 0.3rem 0;
+      border: none;
+    }
   }
   & .b-article__text{
-    font:$md-h6 GothamProLight;
+    font:$md-h5 GothamProLight;
     margin: 0;
+    @include mq (tablet,min){
+     font-size: $md-h6;
+    }
+    &--facebook{
+      font: $lg-h2 ProximaNova-Bold;
+      color: $orange;
+    }
   }
 }
 @include mq (tablet,min){

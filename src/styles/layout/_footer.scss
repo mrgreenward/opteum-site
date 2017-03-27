@@ -4,3 +4,14 @@
 .footer-items{
   max-width: 900px;
 }
+.footer{
+  position: relative;
+  &__under{
+    position: absolute;
+    width: calc(100% + 3.2rem);
+    border: 1px solid $gray--light-primary;
+  }
+  & .logo-company{
+    margin-right:0;
+  }
+}
