@@ -1,15 +1,19 @@
 .b-page__section{
-  padding: 3rem 1.6rem;
+  padding: 3rem 0;
+  margin: 0 1.6rem;
   border-bottom:1px solid $gray--lightest;
  &--jumbotron{
    background: $blue--lightest;
-   padding: 3.5rem 1.6rem;
+   padding: 3.5rem 0;
  }
+  &--jumbotron--uber{
+    background: $white;
+  }
   &--header{
-    padding: 0 1.6rem;
+    padding: 0 ;
   }
   &--underground{
-    padding: 0.5rem 1.6rem;
+    padding: 0.5rem 0;
   }
 }
 .section{
