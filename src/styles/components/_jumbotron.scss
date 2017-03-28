@@ -68,12 +68,17 @@
 }
 @include mq(desktop,min){
   .line{
+    background: url("/img/line-pulse.png")no-repeat;
+    background-size: 100%;
+    width: 100%;
+    height: 200px;
+    margin: auto;
     display: block;
     z-index: 9;
     position: absolute;
-    top:308px;
-  }
-  .line-right{
+    top:88px;
+    left: 0;
     right: 0;
+    bottom: 0;
   }
 }

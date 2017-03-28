@@ -8,6 +8,10 @@
 }
 .img-finance{
   width: 100%;
+  content: url("/img/finance.jpg");
+  @include mq(tablet,min){
+    content: url("/img/finance-desktop.png");
+  }
 }
 .img-block__arrow{
   display: none;
@@ -43,9 +47,8 @@
       top: 32px;
     }
   }
-
   .img-block__arrow--2{
-    top: 411px;
+    top: 448px;
     left: -65px;
     &:after{
       content:"";

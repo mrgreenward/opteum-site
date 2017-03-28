@@ -197,6 +197,13 @@ overflow: hidden;
     }
   }
 }
+a.b-article__text{
+  transition: 0.5s;
+  &:hover{
+    transition: 0.5s;
+    color: $gray--dark;
+  }
+}
 @include mq (tablet,min){
   .b-article--news{
     max-width: 288px;
