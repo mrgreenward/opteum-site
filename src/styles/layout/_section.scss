@@ -8,6 +8,7 @@
  }
   &--jumbotron--uber{
     background: $white;
+    padding: 0;
   }
   &--header{
     padding: 0 ;
@@ -17,8 +18,11 @@
   }
 }
 .section{
-  max-width: 1400px;
+  max-width: 1178px;
   margin: 0 auto;
+  &--news{
+    min-height: 460px;
+  }
 }
 .section-title{
   text-align: center;
