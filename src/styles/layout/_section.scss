@@ -1,13 +1,17 @@
 .b-page__section{
   padding: 3rem 0;
-  margin: 0 1.6rem;
+  margin: 0;
   border-bottom:1px solid $gray--lightest;
+  @include mq (tablet,min){
+    margin: 0 1.6rem;
+  }
  &--jumbotron{
    background: $blue--lightest;
    padding: 3.5rem 0;
  }
   &--jumbotron--uber{
     background: $white;
+    padding: 0;
   }
   &--header{
     padding: 0 ;
@@ -17,8 +21,15 @@
   }
 }
 .section{
-  max-width: 1400px;
+  max-width: 1178px;
   margin: 0 auto;
+  padding: 0 1.2rem;
+  @include mq (tablet,min){
+    padding: 0;
+  }
+  &--news{
+    min-height: 460px;
+  }
 }
 .section-title{
   text-align: center;
