@@ -3,14 +3,23 @@
   max-width: 823px;
   margin: 3.5rem auto;
   &__wrapper{
+    max-width: 823px;
+    max-height: 617px;
+    height: 100%;
     word-break: break-all;
   }
 }
 .img-finance{
   width: 100%;
-  content: url("/img/finance.jpg");
+  height: 100%;
   @include mq(tablet,min){
-    content: url("/img/finance-desktop.png");
+    display: none;
+  }
+  &--desk{
+    display: none;
+    @include mq(tablet,min){
+      display: block;
+    }
   }
 }
 .img-block__arrow{

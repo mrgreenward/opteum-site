@@ -50,5 +50,12 @@
       }
     }
   }
-
+}
+button[disabled]{
+  background: $gray--lightest;
+  color: $gray;
+  &:hover,&:focus{
+    background: $gray--lightest;
+    color: $gray;
+  }
 }

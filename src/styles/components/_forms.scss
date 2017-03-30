@@ -29,6 +29,7 @@
   }
 }
 .field{
+  position: relative;
   width:100%;
   display: flex;
   flex-direction: column;
@@ -51,6 +52,7 @@
   border: none;
   border-bottom: 1px solid $gray--light-primary;
   outline: none;
+  padding: 0 3rem 0 0;
   &:hover{
     outline: none;
   }
@@ -58,14 +60,43 @@
     border-bottom: 2px solid $orange;
   }
   &--error{
-    border-bottom: 1px solid red;
+    border-bottom: 2px solid $color-error;
+    & + .input__icon{
+      box-sizing: border-box;
+      position: absolute;
+      bottom: 10px;
+      right: 0;
+      display: inline-block;
+      background: url("/img/error-icon.svg")no-repeat;
+      background-size: 100%;
+      width: 13px;
+      height: 13px;
+    }
+  }
+  &--success{
+    border-bottom: 2px solid $color-success;
+    & + .input__icon{
+      box-sizing: border-box;
+      position: absolute;
+      bottom: 10px;
+      right: 0;
+      display: inline-block;
+      background: url("/img/success-icon.svg") no-repeat;
+      background-size: 100%;
+      width: 20px;
+      height: 20px;
+    }
   }
 }
+
 .checkbox{
   display: none;
 }
 .label-box{
   position: relative;
+  &:hover:before{
+    border: 1px solid $orange;
+  }
   &:before{
     display: inline-block;
     vertical-align: middle;
@@ -77,8 +108,8 @@
     background-size: 100%;
     width:10px;
     height: 10px;
-  }
 
+  }
   &:after{
     position: absolute;
     left: 0;

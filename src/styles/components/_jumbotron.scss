@@ -1,12 +1,15 @@
 .jumbotron{
   position: relative;
-  padding: 0 1.2rem;
+  padding: 0;
   display: flex;
   flex-direction: column;
   align-items: center;
   overflow: hidden;
   word-break: break-word;
   word-wrap: break-word;
+  @include mq (tablet,min){
+    padding: 0 1.2rem;
+  }
   &__text{
     display: none;
     font: $lg-h3 GothamProLight;
@@ -95,7 +98,7 @@
   &__text-group{
     max-width: 669px;
     width: 75%;
-    margin-bottom: 3.5rem;
+    margin: 4.5rem 0 5.5rem 0;
     @include mq (desktop,min){
       width: 100%;
     }
@@ -115,11 +118,40 @@
       max-height: 575px;
     }
   }
+  &__uber-logo{
+    position: absolute;
+    left: -34px;
+    top:40px;
+    width: 64px;
+    height: 64px;
+    background: url("/img/uber-black.svg")no-repeat;
+    background-size: 100%;
+    @include mq (tablet,min){
+      left: -34px;
+      top:80px;
+      width: 80px;
+      height: 80px;
+    }
+  }
   &__section{
     width: 100%;
   }
   &--uber{
+    padding: 0 1.2rem;
     align-items: flex-start;
+  }
+  &__figure{
+    display: flex;
+    width: 100%;
+    max-width: 275px;
+  }
+  &__icon{
+    margin-right: 2rem;
+  }
+  &--opteum{
+    & .jumbotron__title{
+      display: inline-block;
+    }
   }
 }
 .uber-group{
