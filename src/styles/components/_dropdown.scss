@@ -43,17 +43,28 @@
     transition: 0.5s;
     background-color: $orange--light;
   }
-  &__icon{
-    display: inline-block;
-    float:left;
-    margin-right: 1.5rem;
-    background: $btn-primary-bgcolor;
-    padding: 0.9rem 1.1rem;
-    content: "T";
-    color:$white;
-    border-radius: 20px;
+  &__text{
+    font-size: $sm-sm;
+    font-weight: 100;
+    margin: 4px 0 4px 45px;
+    color:$gray--light-primary;
+    line-height: 1.2;
   }
-  &__icon--opteum{
+}
+.icon-item{
+  float:left;
+  margin-right: 1.5rem;
+  background: $btn-primary-bgcolor;
+  padding: 0.9rem 1.1rem;
+  color:$white;
+  border-radius: 20px;
+  &--big{
+      padding: 1.2rem 1.7rem;
+      border-radius: 50%;
+      font-size: $lg-h2;
+
+  }
+  &--opteum{
     color: transparent;
     border-radius: 0;
     padding: 0;
@@ -62,12 +73,5 @@
     content: "";
     width: 32px;
     height: 32px;
-  }
-  &__text{
-    font-size: $sm-sm;
-    font-weight: 100;
-    margin: 4px 0 4px 45px;
-    color:$gray--light-primary;
-    line-height: 1.2;
   }
 }

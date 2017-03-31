@@ -1,11 +1,12 @@
+
 .b-article{
   display: flex;
-  max-width: 343px;
-  min-width: 214px;
+  max-width: 252px;
+  min-width: 149px;
   flex-direction: column;
   align-items: center;
   text-align: center;
-  margin: 0 0 1.250em;
+  margin: 0 0 3em;
   word-wrap: break-word;
   word-break: break-word;
   @include mq(tablet,min){
@@ -13,12 +14,12 @@
     align-items: flex-start;
   }
 &--main{
-  max-width: 608px;
+  max-width: 408px;
   min-width: 230px;
   align-items: left;
   @include mq(tablet-freak,min){
-  max-width: 343px;
-  min-width: 230px;
+  max-width: 286px;
+  min-width: 199px;
 }
 }
   &--price{
@@ -56,6 +57,7 @@
   }
   &__title{
     font-size: $md-h4;
+    line-height: 1.2;
   }
   &__text{
     display: block;
@@ -118,15 +120,20 @@
 .img-price{
   width: 100%;
 }
+.icon-opteum{
+  width: 40px;
+  height: 40px;
+}
 .b-article--news{
   overflow: hidden;
   transition: 0.5s;
   position: relative;
   max-width: 342px;
-  max-height: 245px;
+  max-height: 275px;
   align-items: flex-start;
   text-align: left;
   border: 1px solid $gray--lightest;
+  margin-bottom: 2rem;
   & .b-article__img{
     max-width: 342px;
     transition: 1s;
@@ -162,8 +169,11 @@
 }
 .b-article--news:hover{
   transition: 0.5s;
-  max-height: 315px;
   box-shadow: $shadow-secondary;
+  border: 1px solid $color-hover;
+  @include mq (desktop,min){
+    max-height: 315px;
+  }
  .b-article_hidden{
    position: relative;
    transition: 0.5s;
@@ -175,6 +185,30 @@
   .b-article__img{
     transition: 0.5s;
     bottom: 0;
+  }
+}
+.b-article--prices{
+  max-width: 288px;
+  padding: 4rem 1.5rem;
+  align-items: center;
+  text-align: center;
+  background: $white;
+  border: 1px solid $gray--lightest;
+  @include mq (tablet,min){
+    margin: 4rem 0;
+  }
+  & .article-img{
+    width: 203px;
+    height: 150px;
+    margin: 1.5rem 0;
+  }
+  & .b-article__title{
+    font-size: $md-h3;
+    @include mq(desktop,min){}
+    font-size: $lg-h3;
+  }
+  & .icon-item{
+    padding: 1.2rem 1.4rem;
   }
 }
 .b-article--footer{
@@ -230,5 +264,6 @@ a.b-article__text{
 @include mq (desktop,min){
   .b-article--news{
     max-width: 268px;
+    max-height: 245px;
   }
 }

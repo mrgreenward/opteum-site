@@ -35,19 +35,24 @@
     padding: 0 1.2rem;
   }
   &__text{
-    display: none;
-    font: $lg-h3 GothamProLight;
+    text-align: center;
+    font:$sm-h2 GothamProLight;
     color: gray;
     line-height: 1.5;
     &--left{
       text-align: left;
     }
     @include mq (tablet,min){
-      display: block;
       font-size: $md-h3;
     }
     @include mq(desktop,min){
       font-size: $lg-h3;
+    }
+    &--hidden-sm{
+      display: none;
+      @include mq (tablet,min){
+        display: block;
+      }
     }
   }
   &__text--uber{
@@ -177,9 +182,7 @@
     max-width: 1178px;
     margin: 0 auto;
     padding-right: 0;
-    @include mq (desktop,min){
 
-    }
     & .grid__row{
       align-items: flex-start;
       @include mq(desktop,min){
@@ -213,10 +216,8 @@
       }
     }
     & .jumbotron__text{
-      display: block;
-      font-size: $sm-h4;
-      @include mq (desktop,min){
-        font-size: $lg-h3;
+      @include mq(desktop,min){
+        text-align: left;
       }
     }
     & .jumbotron__text-group{
@@ -231,6 +232,17 @@
         text-align: left;
       }
     }
+  }
+  &--price{
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+    & .jumbotron__text{
+      display: block;
+    }
+  }
+  &--taxigrace{
+
   }
 }
 .img-jumbotron--opteum{
