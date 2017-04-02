@@ -29,6 +29,9 @@
   &--price-img{
     display: none;
   }
+  &--border-bot-mb{
+    border-bottom: 1px solid $gray--lightest;
+  }
 }
 .grid__item--mb-hide{
   display: none;
@@ -46,6 +49,9 @@
   }
   .grid__item--mb-hide{
     display: block;
+  }
+  .grid__item--border-right{
+    border-right: 1px solid $gray--lightest;
   }
   .grid--desktop{
     display: block;
@@ -66,5 +72,11 @@
 @include mq(desktop,min){
   .grid__item--price-img{
     display: block;
+  }
+}
+.grid__row--base-block{
+  align-items: center;
+  @include mq (tablet,min){
+    align-items: flex-start;
   }
 }

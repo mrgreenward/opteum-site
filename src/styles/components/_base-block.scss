@@ -1,12 +1,23 @@
 .base-block {
+    max-width: 699px;
   background: $white;
+  @include mq (desktop,min){
+    max-width: 748px;
+  }
+
+  margin: 2.5rem auto;
 }
 .base-list{
+  margin:2.4rem 0;
   &__item {
+    position: relative;
     display: block;
+    margin-left: 3rem;
     line-height: 1.5;
     &:before {
-      display: inline-block;
+      position: absolute;
+      top: 5px;
+      left: -22px;
       content: " ";
       width: 12px;
       margin-right: 1rem;
@@ -16,14 +27,78 @@
     }
   }
 }
+.base-list--more{
+  margin:2.4rem 0;
+  & .base-list__item {
+    line-height: 2.5;
+    margin-left: 3rem;
+    &:before{
+      top: 5px;
+      left: -30px;
+      margin-right: 1rem;
+    }
+  }
+  & .base-list__item--check:before {
+    width: 19px;
+    height:23px;
+    background: url("/img/check-item.svg")no-repeat;
+  }
+  & .base-list__item--geo:before {
+    width: 19px;
+    height:23px;
+    background: url("/img/geo-item.svg")no-repeat;
+  }
+  & .base-list__item--car:before {
+    width: 23px;
+    height:23px;
+    background: url("/img/car-item.svg")no-repeat;
+  }
+}
 .base-item{
+  max-width: 211px;
+  @include mq (desktop,min){
+    max-width: 282px;
+  }
+  margin: 0 auto;
+  padding: 2rem 3rem;
+  word-wrap: break-word;
+  &--info{
+    padding: 4rem 3rem 2rem 3rem;
+    & .b-article__title{
+      margin-bottom: 1.6rem;
+    }
+  }
  &__title {
+   text-align: center;
     font-size: $md-h1-5;
     @include mq(desktop, min) {
       font-size: $lg-h1-5;
     }
   }
   &__price{
+    margin: 4.5rem 0;
     text-align: center;
+  }
+  &__line{
+      margin: 2.4rem auto;
+      width: 64px;
+      border-bottom: 1px solid $orange;
+
+  }
+  &__text{
+    text-align: center;
+    &--big{
+      font: $md-h1 GothamProRegular;
+      color: $black;
+      display: block;
+      line-height: 1.7;
+    }
+    &--left{
+      text-align: left;
+    }
+  }
+  &__btn{
+    margin-left: 0;
+    margin-top: 3rem;
   }
 }
