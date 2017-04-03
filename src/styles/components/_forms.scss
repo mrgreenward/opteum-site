@@ -51,14 +51,14 @@
   min-height: 40px;
   font: 16px GothamProRegular;
   border: none;
-  border-bottom: 1px solid $gray--light-primary;
+  border-bottom: 2px solid $color-form;
   outline: none;
   padding: 0 3rem 0 0;
   &:hover{
     outline: none;
   }
-  &:focus{
-    border-bottom: 2px solid $orange;
+  &:focus, &:hover{
+    border-bottom: 2px solid $color-form-focus;
   }
   &--error{
     border-bottom: 2px solid $color-error;

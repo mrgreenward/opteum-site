@@ -3,8 +3,8 @@ $orange: #F8A56F;
 $orange--light: rgba(255, 141, 0, 0.13);
 $orange--dark: #F26C51;
 
-$color-error: #ff0000;
-$color-success: #4CAF50;
+$color-error: #f26c51;
+$color-success: rgba(122, 221, 153, 0.6);
 $color-hover: rgba(176, 222, 249, 0.6);
 $white: #FFFFFF;
 $blue--dark: #3D485B;
@@ -20,6 +20,8 @@ $gray--light-secondary:#C8CFD1;
 $gray--lightest: #EEEEEE;
 $shadow-primary: 7px 7px 37px -9px rgba(0,0,0,0.75);
 $shadow-secondary: 2px 10px 21px -9px rgba(0, 0, 0, 0.37);
+$color-form: #eeeeee;
+$color-form-focus: rgba(247, 165, 111, 0.6);
 // breakpoints
 $breakpoints: (
         "phone":        320px,

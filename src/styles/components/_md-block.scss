@@ -39,7 +39,7 @@
     }
   }
   @include mq(desktop,min){
-    padding: 8rem 2.8rem 0 2.8rem;
+    padding: 4rem 2.8rem 0 2.8rem;
     &:after{
       margin-top: 8rem;
     }
@@ -62,7 +62,7 @@
   }
 }
 .md-title{
-  font: $sm-h4 GothamProMedium ;
+  font: $sm-h4 GothamProRegular ;
   color: $black;
   @include mq(tablet,min){
     font-size: $md-h2;

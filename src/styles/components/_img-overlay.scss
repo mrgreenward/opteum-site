@@ -6,13 +6,16 @@
     position: relative;
     width: 300px;
     height: 268px;
-    margin: 3.5rem auto;
+    margin:7rem auto 3.5rem auto;
     &__item{
       position: absolute;
       display:inline-block;
       cursor: pointer;
       width: 196px;
-      height: 268px;
+      height: 266px;
+      &.control-driver{
+        height: 250px;
+      }
     }
     &__arrow{
       position: absolute;
@@ -25,15 +28,21 @@
     }
   }
   .img-overlay--marketing{
+    margin-top: 3.5rem;
     min-width:50%;
     height: 221px;
+
     & .img-overlay__item{
       height: 165px;
       box-shadow: $shadow-primary;
     }
     & .img-overlay__arrow{
-      width:69px;
-      height: 26px;
+      width: 154px;
+      left: 92px;
+      top: -18px;
+      height: 61px;
+      background: url(../img/arrow-exchange.png) no-repeat;
+      background-size: 45%;
     }
   }
   .img-regist{
@@ -46,16 +55,18 @@
     background: url("../img/drivers-exchange.png")no-repeat;
     background-size: 100%;
     left: 15%;
-    top: 8px;
+    top: 19px;
     width: 249px;
   }
   .control-driver{
     background: url("../img/driver-control.png")no-repeat;
     background-size: 100%;
+    box-shadow: $shadow-primary;
     left: 0;
   }
   .control-rating{
     background: url("../img/driver-rating.png")no-repeat;
+    box-shadow: $shadow-primary;
     background-size: 100%;
     left: 88px;
     top: -41px;
@@ -64,10 +75,13 @@
 @include mq (tablet-small,min){
   .img-overlay{
     width: 401px;
-    height: 324px;
+    height: 303px;
     &__item{
       width: 224px;
-      height: 306px;
+      height: 302px;
+      &.control-driver{
+        height: 281px;
+      }
     }
   }
   .control-driver{
@@ -95,10 +109,11 @@
       height: 283px;
     }
     & .img-overlay__arrow{
-      top:-35px;
-      left:153px;
-      width:120px;
+      top: -27px;
+      left: 162px;
+      width: 120px;
       height: 44px;
+      background-size: 69%;
     }
   }
   .img-regist{
@@ -116,11 +131,16 @@
 }
  @include mq (desktop,min){
    .img-overlay{
+     margin-top: 9rem;
      width: 439px;
      height: 361px;
+
      &__item{
        width: 268px;
-       height: 366px;
+       height: 362px;
+       &.control-driver{
+         height: 337px;
+       }
      }
    }
    .control-driver{
@@ -142,18 +162,15 @@
      }
    }
    .img-overlay--marketing{
+     margin-top: 6rem;
      width: 829px;
      height: 440px;
      & .img-overlay__item{
        height: 367px;
      }
      & .img-overlay__arrow{
-       top:-25px;
-       left:165px;
-       width:120px;
-       height: 44px;
-       transform: rotate(20deg);
-       z-index: 999;
+       background-size: 100%;
+       left: 207px;
      }
    }
    .img-regist{
@@ -167,6 +184,7 @@
    }
    .img-exchange{
      left:27%;
+     top:32px;
      width: 556px;
      height: 367px !important;
    }

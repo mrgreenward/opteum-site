@@ -8,9 +8,13 @@
     max-height: 600px;
     width: 85%;
     margin: auto;
-    padding: 1.5em 0 2.5em 0;
+    padding: 1.5em 0 2.1rem 0;
+    @include mq(desktop,min){
+      padding: 1.5em 0 2.5em 0;
+    }
     &--uber{
       margin: auto;
+      padding-bottom: 0;
     }
   }
 }
@@ -179,7 +183,7 @@
   }
   &--opteum{
     position: static;
-    max-width: 1178px;
+    max-width: 1188px;
     margin: 0 auto;
     padding-right: 0;
 
