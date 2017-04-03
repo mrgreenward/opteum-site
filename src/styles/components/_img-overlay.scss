@@ -16,7 +16,7 @@
     }
     &__arrow{
       position: absolute;
-      background: url("/img/arrow.svg")no-repeat;
+      background: url("../img/arrow.svg")no-repeat;
       background-size: 100%;
       top:-26px;
       left:68px;
@@ -37,25 +37,25 @@
     }
   }
   .img-regist{
-    background: url("/img/registration.png")no-repeat;
+    background: url("../img/registration.png")no-repeat;
     background-size: 100%;
     left: 0;
     width:118px;
   }
   .img-exchange{
-    background: url("/img/drivers-exchange.png")no-repeat;
+    background: url("../img/drivers-exchange.png")no-repeat;
     background-size: 100%;
     left: 15%;
     top: 8px;
     width: 249px;
   }
   .control-driver{
-    background: url("/img/driver-control.png")no-repeat;
+    background: url("../img/driver-control.png")no-repeat;
     background-size: 100%;
     left: 0;
   }
   .control-rating{
-    background: url("/img/driver-rating.png")no-repeat;
+    background: url("../img/driver-rating.png")no-repeat;
     background-size: 100%;
     left: 88px;
     top: -41px;

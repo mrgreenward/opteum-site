@@ -136,7 +136,7 @@
     position: absolute;
     right: 0;
     top:0;
-    background: url("/img/jumbotron-uber-bg.png")no-repeat;
+    background: url("../img/jumbotron-uber-bg.png")no-repeat;
     width: 20%;
     height: 100%;
     max-width: 140px;
@@ -153,7 +153,7 @@
     top:40px;
     width: 64px;
     height: 64px;
-    background: url("/img/uber-black.svg")no-repeat;
+    background: url("../img/uber-black.svg")no-repeat;
     background-size: 100%;
     @include mq (tablet,min){
       left: -34px;
@@ -293,7 +293,7 @@
 }
 @include mq(desktop,min){
   .line{
-    background: url("/img/line-pulse.png")no-repeat;
+    background: url("../img/line-pulse.png")no-repeat;
     background-size: 100%;
     width: calc(100% + 3.2rem);
     height: 200px;

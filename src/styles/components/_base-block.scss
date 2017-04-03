@@ -22,7 +22,7 @@
       width: 12px;
       margin-right: 1rem;
       height: 9px;
-      background: url("/img/arrow-item.svg") no-repeat;
+      background: url("../img/arrow-item.svg") no-repeat;
       background-size: 100%;
     }
   }
@@ -41,17 +41,17 @@
   & .base-list__item--check:before {
     width: 19px;
     height:23px;
-    background: url("/img/check-item.svg")no-repeat;
+    background: url("../img/check-item.svg")no-repeat;
   }
   & .base-list__item--geo:before {
     width: 19px;
     height:23px;
-    background: url("/img/geo-item.svg")no-repeat;
+    background: url("../img/geo-item.svg")no-repeat;
   }
   & .base-list__item--car:before {
     width: 23px;
     height:23px;
-    background: url("/img/car-item.svg")no-repeat;
+    background: url("../img/car-item.svg")no-repeat;
   }
 }
 .base-item{

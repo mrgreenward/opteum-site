@@ -47,7 +47,7 @@
     left: -65px;
     &:after{
       content:"";
-      background:url("/img/arrow.svg") no-repeat no-repeat;
+      background:url("../img/arrow.svg") no-repeat no-repeat;
       transform: rotate(26deg);
       background-size: 100%;
       width: 68px;
@@ -62,7 +62,7 @@
     left: -65px;
     &:after{
       content:"";
-      background:url("/img/arrow-right.svg") no-repeat no-repeat;
+      background:url("../img/arrow-right.svg") no-repeat no-repeat;
       transform: rotate(152deg);
       background-size: 100%;
       width: 68px;
@@ -81,7 +81,7 @@
     }
     &:after{
       content: "";
-      background:url("/img/arrow-right.svg") 0 0 no-repeat;
+      background:url("../img/arrow-right.svg") 0 0 no-repeat;
       transform: rotate(-26deg);
       background-size: 100%;
       width: 68px;
@@ -106,7 +106,7 @@
 
   .img-block__arrow--1:after, .img-block__arrow--2:after{
     content:"";
-    background:url("/img/arrow.svg") no-repeat no-repeat;
+    background:url("../img/arrow.svg") no-repeat no-repeat;
     transform: rotate(0deg);
     width: 91px;
     height: 17px;
@@ -130,7 +130,7 @@
     }
     &:after{
       content: "";
-      background:url("/img/arrow-right.svg") 0 0 no-repeat;
+      background:url("../img/arrow-right.svg") 0 0 no-repeat;
       transform: rotate(0deg);
       width: 180px;
       height: 60px;

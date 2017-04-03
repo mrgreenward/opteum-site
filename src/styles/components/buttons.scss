@@ -42,10 +42,9 @@
   &--nav{
     font-size: $lg-h5;
     &:after{
-      font-family: FontAwesome;
-      content: "\f25a";
+      font-family: GothamProMedium;
+      content: "Демо";
       @include mq(phone-wide,min){
-        font-family: GothamProMedium;
         content: "Демо-версия";
       }
     }
