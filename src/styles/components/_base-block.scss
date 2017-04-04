@@ -55,7 +55,7 @@
   }
 }
 .base-item{
-  max-width: 211px;
+  max-width: 224px;
   @include mq (desktop,min){
     max-width: 282px;
   }
@@ -63,7 +63,10 @@
   padding: 2rem 3rem;
   word-wrap: break-word;
   &--info{
-    padding: 4rem 3rem 2rem 3rem;
+    padding: 4rem 0 2rem 0;
+    @include mq(tablet,min){
+      padding: 4rem 3rem 2rem 3rem;
+    }
     & .b-article__title{
       margin-bottom: 1.6rem;
     }
@@ -98,7 +101,12 @@
     }
   }
   &__btn{
-    margin-left: 0;
-    margin-top: 3rem;
+    min-width: 242px;
+    margin: 3rem auto 0 auto;
+    @include mq(tablet,min){
+      margin-left: 0;
+      margin-top: 3rem;
+    }
+
   }
 }

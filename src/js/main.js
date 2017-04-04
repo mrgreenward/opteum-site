@@ -3,3 +3,4 @@
 //= components/burger.js
 //= components/dropdown.js
 //= components/form.js
+//= components/anchors.js

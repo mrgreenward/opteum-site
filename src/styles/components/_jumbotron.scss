@@ -39,6 +39,7 @@
     padding: 0 1.2rem;
   }
   &__text{
+    width: 100%;
     text-align: center;
     font:$sm-h2 GothamProLight;
     color: gray;
@@ -243,6 +244,7 @@
     text-align: center;
     & .jumbotron__text{
       display: block;
+      max-width: 100%;
     }
   }
   &--taxigrace{

@@ -19,6 +19,12 @@
   &--underground{
     padding: 0.5rem 0;
   }
+  &--non-border{
+    border: none;
+  }
+  &--gradient{
+    background:  linear-gradient(to bottom, #e7ebf9, #fcfbf8);
+  }
 }
 .section{
   max-width: 1178px;
@@ -35,6 +41,12 @@
         align-items: flex-start;
     }
     }
+  }
+  &--md{
+    max-width: 748px;
+  }
+  &--md-grid{
+    max-width: 787px;
   }
 }
 .section-title{
