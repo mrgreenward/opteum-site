@@ -1,5 +1,4 @@
 .grid {
-  width:100%;
 &--container{
   max-width: 800px;
   margin: 0 auto;
@@ -16,6 +15,7 @@
   flex-direction: column;
   flex-wrap: wrap;
   align-items: center;
+  justify-content: center;
   &--nowrap{
     flex-wrap: nowrap;
   }
@@ -32,6 +32,9 @@
   }
   &--border-bot-mb{
     border-bottom: 1px solid $gray--lightest;
+    @include mq(tablet,min){
+      border-bottom: 0;
+    }
   }
 }
 .grid__item--mb-hide{

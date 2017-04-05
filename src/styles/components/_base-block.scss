@@ -8,10 +8,10 @@
   margin: 2.5rem auto;
 }
 .base-list{
-  margin:2.4rem 0;
+  margin:.5rem 0;
+  flex: 1 0 auto;
   &__item {
     position: relative;
-    display: block;
     margin-left: 3rem;
     line-height: 1.5;
     &:before {
@@ -55,9 +55,16 @@
   }
 }
 .base-item{
-  max-width: 224px;
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  max-width: 244px;
+  &--white{
+    background: $white;
+  }
   @include mq (desktop,min){
-    max-width: 282px;
+    max-width: 286px;
   }
   margin: 0 auto;
   padding: 2rem 3rem;
@@ -71,6 +78,11 @@
       margin-bottom: 1.6rem;
     }
   }
+  &--opteum{
+    min-height: 760px;
+padding-bottom: 3rem;
+    margin-top: 2.5rem;
+  }
  &__title {
    text-align: center;
     font-size: $md-h1-5;
@@ -81,6 +93,9 @@
   &__price{
     margin: 4.5rem 0;
     text-align: center;
+    &--sm{
+      font-size: $sm-sm;
+    }
   }
   &__line{
       margin: 2.4rem auto;
@@ -96,17 +111,42 @@
       display: block;
       line-height: 1.7;
     }
+    &--bigest{
+      font-size: $lg-h1;
+    }
     &--left{
       text-align: left;
     }
   }
   &__btn{
+    flex: 0 0 auto;
     min-width: 242px;
     margin: 3rem auto 0 auto;
     @include mq(tablet,min){
       margin-left: 0;
       margin-top: 3rem;
     }
-
+    &--center{
+      margin: 0 auto;
+    }
   }
+  &__add{
+    margin: 10rem 0 1.2rem 0;
+    padding: 1.2rem;
+    border-top:1px solid $border-block;
+  }
+  &__descr{
+    font-size: $sm-sm;
+  }
+}
+.tie{
+  position: absolute;
+  color:$white;
+  padding: 0.5rem 1.2rem;
+  background: $orange--dark;
+  transform: rotate(46deg);
+  width: 148px;
+  text-align: center;
+  top: 30px;
+  right: -46px;
 }

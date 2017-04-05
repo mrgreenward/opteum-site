@@ -187,7 +187,9 @@
     max-width: 1188px;
     margin: 0 auto;
     padding-right: 0;
-
+    & .grid{
+      width: 100%; //ie koctibJl
+    }
     & .grid__row{
       align-items: flex-start;
       @include mq(desktop,min){
@@ -251,6 +253,13 @@
 
   }
 }
+.jumbotron--opteum-price{
+  & .jumbotron__icon{
+    width: 48px;
+    height: 48px;
+    margin:0;
+  }
+}
 .img-jumbotron--opteum{
   position: static;
   & .img-jumbotron__img{
@@ -277,7 +286,6 @@
       height: 100%;
     }
   }
-
 }
 .uber-group{
   flex-direction: column;
