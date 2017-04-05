@@ -35,12 +35,6 @@
   }
   &--news{
     min-height: 460px;
-    & .grid__row{
-      align-items: center;
-      @include mq(desktop,min){
-        align-items: flex-start;
-    }
-    }
   }
   &--md{
     max-width: 748px;

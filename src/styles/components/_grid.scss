@@ -16,6 +16,9 @@
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
+  &--centered{
+    align-items: center;
+  }
   &--nowrap{
     flex-wrap: nowrap;
   }
