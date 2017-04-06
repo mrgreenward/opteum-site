@@ -1,5 +1,5 @@
 .b-infografic{
-
+padding: 0 1.6rem;
 }
 .step{
   position: relative;
@@ -22,19 +22,27 @@
     position: absolute;
     display: inline-block;
     top: 17px;
-    width: 100%;
+    right: 50%;
+    width: 150%;
     content:"";
     border-bottom: 1px solid $gray--light-primary;
   }
-  &--second:before{
+  &:before{
     z-index: 9;
     position: absolute;
     display: inline-block;
     top: 17px;
-    left: 0;
-    width: 100%;
+    left: 111px;
+    width: 200%;
     content:"";
     border-bottom: 1px solid $gray--light-primary;
+  }
+  &--last:after,&--last:before{
+
+  }
+  &--first:after{
+    right: -220px;
+    width: 20%;
   }
   &__number{
   position: absolute;
