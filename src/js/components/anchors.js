@@ -5,8 +5,13 @@
 $(document).ready(function() {
     $('.nav-anchor[href^="#"]').click(function(){
         var el = $(this).attr('href');
-        $('body, html').animate({
-            scrollTop: $(el).offset().top + (-100)}, 1000);
-        return false;
+        if (el === '#form' && $('form').is($(el)) === false){ // если на странице нет формы, то не переностить туда якорь
+            return false
+        }else
+        {
+            $('body, html').animate({
+                scrollTop: $(el).offset().top + (-100)}, 1000);
+            return false;
+        }
     });
 });

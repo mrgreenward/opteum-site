@@ -23,7 +23,10 @@
     flex-wrap: nowrap;
   }
   &--align-top{
-    align-items: flex-start;
+    align-items: center;
+    @include mq(tablet,min){
+      align-items: flex-start;
+    }
   }
 }
 

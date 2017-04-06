@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="320px" height="291px" viewBox="0 0 320 291" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 39 (31667) - http://www.bohemiancoding.com/sketch -->
+    <title>Group 38</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="100%" y1="50%" x2="37.8600736%" y2="86.7286111%" id="linearGradient-1">
+            <stop stop-color="#FCB69F" offset="0%"></stop>
+            <stop stop-color="#FFECD2" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="100%" y1="0%" x2="-1.49463267%" y2="100%" id="linearGradient-2">
+            <stop stop-color="#EB815E" offset="0%"></stop>
+            <stop stop-color="#FDB8A1" offset="36.0102634%"></stop>
+            <stop stop-color="#FDD0B7" offset="100%"></stop>
+        </linearGradient>
+        <rect id="path-3" x="6" y="8" width="52" height="16" rx="4"></rect>
+        <filter x="-50%" y="-50%" width="200%" height="200%" filterUnits="objectBoundingBox" id="filter-4">
+            <feOffset dx="0" dy="1" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="4" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.1 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+        <rect id="path-5" x="0" y="0" width="64" height="24" rx="4"></rect>
+        <mask id="mask-6" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="64" height="24" fill="white">
+            <use xlink:href="#path-5"></use>
+        </mask>
+        <rect id="path-7" x="6" y="8" width="52" height="16" rx="4"></rect>
+        <filter x="-50%" y="-50%" width="200%" height="200%" filterUnits="objectBoundingBox" id="filter-8">
+            <feOffset dx="0" dy="1" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="4" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.1 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+        <rect id="path-9" x="0" y="0" width="64" height="24" rx="4"></rect>
+        <mask id="mask-10" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="64" height="24" fill="white">
+            <use xlink:href="#path-9"></use>
+        </mask>
+        <rect id="path-11" x="6" y="8" width="52" height="16" rx="4"></rect>
+        <filter x="-50%" y="-50%" width="200%" height="200%" filterUnits="objectBoundingBox" id="filter-12">
+            <feOffset dx="0" dy="1" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="4" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.1 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+        <rect id="path-13" x="0" y="0" width="64" height="24" rx="4"></rect>
+        <mask id="mask-14" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="64" height="24" fill="white">
+            <use xlink:href="#path-13"></use>
+        </mask>
+    </defs>
+    <g id="Индикаторы" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Индикаторы-(iPhone-5)" transform="translate(0.000000, -3474.000000)">
+            <g id="Group-39" transform="translate(0.000000, 3471.000000)">
+                <g id="Group-38">
+                    <text id="Норма-по-заказам" font-family="GothamPro, Gotham Pro" font-size="12" font-weight="normal" line-spacing="15" fill="#7ADD99">
+                        <tspan x="104.96" y="49">Норма по </tspan>
+                        <tspan x="115.604" y="64">заказам</tspan>
+                    </text>
+                    <text id="Система-повысила-тар" font-family="GothamPro, Gotham Pro" font-size="12" font-weight="normal" line-spacing="15" fill-opacity="0.54" fill="#363636">
+                        <tspan x="29.208" y="90">Система </tspan>
+                        <tspan x="20.94" y="105">повысила </tspan>
+                        <tspan x="42.036" y="120">тариф</tspan>
+                    </text>
+                    <text id="Перевыполнение-плана" font-family="GothamPro, Gotham Pro" font-size="12" font-weight="normal" line-spacing="15" fill-opacity="0.54" fill="#363636">
+                        <tspan x="182.38" y="9">Перевыполнение</tspan>
+                        <tspan x="252.844" y="24">плана</tspan>
+                    </text>
+                    <g id="Group-31" transform="translate(0.000000, 38.000000)">
+                        <g id="Group-30">
+                            <rect id="Rectangle-27-Copy-3" fill="#FAFBFD" x="139" y="40" width="24" height="216"></rect>
+                            <rect id="Rectangle-27-Copy-4" fill="#FAFBFD" x="57" y="96" width="24" height="160"></rect>
+                            <rect id="Rectangle-27-Copy-2" fill="#FAFBFD" x="265" y="0" width="24" height="256"></rect>
+                            <path d="M29.1690145,220.042012 C29.1690145,220.042012 40.2355679,223.134939 45.0927122,225.130246 C49.9498564,227.125553 61.1999232,213.844653 67.6099691,213.844653 C73.7750223,213.844653 76.715253,224.795466 84.0777686,225.130246 C92.3125414,225.504689 102.034987,213.690175 111.157075,213.844653 C118.152077,213.96311 125.770295,213.333471 132.777457,213.844653 C141.386564,214.472699 144.161785,195.313124 152.049915,195.675139 C160.766697,196.075183 168.734892,205.82664 172.78551,205.82664 C175.554268,205.82664 179.036344,199.670441 181.757773,200.301886 C185.113786,201.08057 188.452478,209.301709 192.913078,207.852749 C200.990828,205.228811 206.064616,193.395097 206.064616,193.395097 C206.064616,193.395097 213.570152,180.71568 225.355603,179.571845 C234.906291,178.644904 246.277852,188.781849 257.127677,187.054732 C267.977502,185.327615 268.05358,170.042768 276.443872,169.621534 C284.379251,169.22314 283.230839,175.906798 296.234059,175.906798 C300.674764,175.906798 305.300165,175.454156 308.878827,173.625309 C315.77916,170.098947 319.999999,164 319.999999,164 L319.999999,256 L1.13705227e-07,256 L1.13705227e-07,234.891495 C1.13705227e-07,234.891495 8.61763595,237.019595 14.2947916,234.891497" id="Line" fill="url(#linearGradient-1)"></path>
+                            <path d="M0,234.744949 C0,234.744949 1.03933379,235.491629 11.2007091,234.744947 C19.6085214,234.12712 24.0345878,219.880374 29.7630462,219.880374 C35.4915045,219.880374 42.8119976,224.450844 45.2160823,224.450844 C51.630965,224.450844 61.3354473,213.346571 67.75033,213.346571 C73.9200352,213.346571 76.8624845,224.121443 84.2305556,224.450844 C92.4715421,224.819271 102.201324,213.194575 111.330295,213.346571 C118.330576,213.463124 125.954542,212.843601 132.966991,213.34657 C141.582594,213.964526 144.359909,195.112777 152.253992,195.468975 C160.977351,195.862592 168.376337,205.140998 172.430012,205.140998 C175.200859,205.140998 178.152499,199.30751 180.875981,199.928809 C184.234526,200.694983 188.4187,208.475746 192.882665,207.050066 C200.96651,204.468286 205.564411,194.074414 205.564411,194.074414 C205.564411,194.074414 216.018635,179.54336 226.14745,179.54336 C236.276264,179.54336 246.271824,187.466012 256.122285,187.466012 C263.836234,187.466012 270.897236,169.976833 276.29552,169.976833 C284.933366,169.976833 286.465842,176.386922 295.842459,176.386922 C314.462745,176.386922 320,164 320,164" id="Line-Copy" stroke="url(#linearGradient-2)" stroke-linecap="round"></path>
+                            <path d="M151,202 C153.761424,202 156,199.761424 156,197 C156,194.238576 153.761424,192 151,192 C148.238576,192 146,194.238576 146,197 C146,199.761424 148.238576,202 151,202 Z" id="Oval-5-Copy-3" stroke="#F8A56F" fill="#FFFFFF"></path>
+                            <g id="Group-8" transform="translate(37.000000, 170.000000)">
+                                <g id="Group-4">
+                                    <g id="Rectangle-9-Copy">
+                                        <use fill="black" fill-opacity="1" filter="url(#filter-4)" xlink:href="#path-3"></use>
+                                        <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-3"></use>
+                                    </g>
+                                    <use id="Rectangle-9" stroke="#FAFBFD" mask="url(#mask-6)" stroke-width="2" fill="#FFFFFF" xlink:href="#path-5"></use>
+                                </g>
+                                <text id="2-з/час" font-family="GothamPro, Gotham Pro" font-size="12" font-weight="normal" line-spacing="16" fill-opacity="0.54" fill="#363636">
+                                    <tspan x="10" y="13">2 з/час</tspan>
+                                </text>
+                            </g>
+                            <g id="Group-8-Copy" transform="translate(119.000000, 152.000000)">
+                                <g id="Group-4">
+                                    <g id="Rectangle-9-Copy">
+                                        <use fill="black" fill-opacity="1" filter="url(#filter-8)" xlink:href="#path-7"></use>
+                                        <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-7"></use>
+                                    </g>
+                                    <use id="Rectangle-9" stroke="#FAFBFD" mask="url(#mask-10)" stroke-width="2" fill="#FFFFFF" xlink:href="#path-9"></use>
+                                </g>
+                                <text id="3-з/час" font-family="GothamPro, Gotham Pro" font-size="12" font-weight="normal" line-spacing="16" fill-opacity="0.54" fill="#363636">
+                                    <tspan x="10" y="13">3 з/час</tspan>
+                                </text>
+                            </g>
+                            <g id="Group-8-Copy-2" transform="translate(245.000000, 125.000000)">
+                                <g id="Group-4">
+                                    <g id="Rectangle-9-Copy">
+                                        <use fill="black" fill-opacity="1" filter="url(#filter-12)" xlink:href="#path-11"></use>
+                                        <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-11"></use>
+                                    </g>
+                                    <use id="Rectangle-9" stroke="#FAFBFD" mask="url(#mask-14)" stroke-width="2" fill="#FFFFFF" xlink:href="#path-13"></use>
+                                </g>
+                                <text id="6-з/час" font-family="GothamPro, Gotham Pro" font-size="12" font-weight="normal" line-spacing="16" fill-opacity="0.54" fill="#363636">
+                                    <tspan x="10" y="13">6 з/час</tspan>
+                                </text>
+                            </g>
+                            <circle id="Oval-5-Copy-2" stroke="#ED8968" fill="#FFFFFF" cx="277" cy="170" r="5"></circle>
+                            <path d="M67,220 C69.7614237,220 72,217.761424 72,215 C72,212.238576 69.7614237,210 67,210 C64.2385763,210 62,212.238576 62,215 C62,217.761424 64.2385763,220 67,220 Z" id="Oval-5-Copy-4" stroke="#F8A56F" fill="#FFFFFF"></path>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
