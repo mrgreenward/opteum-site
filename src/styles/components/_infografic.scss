@@ -1,7 +1,10 @@
 .infografic{
   position: relative;
   max-width: 480px;
-  margin: 9rem auto 2rem;
+  margin: 6rem auto 2rem;
+  @include mq (desktop,min){
+    margin: 9rem auto 2rem;
+  }
   &__descr{
     text-align: center;
     margin: 2rem 0;
@@ -50,6 +53,14 @@
   width: 100%;
   display: flex;
   justify-content: space-between;
+  &--motivation{
+    flex-wrap: wrap;
+    max-width: 500px;
+    & .infografic-piece__item{
+      min-width: 250px;
+      margin: 1.5rem auto;
+    }
+  }
   @include mq (tablet,min){
     width: auto;
     margin-left: 3rem;
@@ -63,8 +74,12 @@
     margin-left: 0;
   }
   &__item{
-    flex: 1;
-    margin-right: 1rem;
+    max-width: 300px;
+    margin:0 auto;
+    @include mq (phone-wide,min){
+      flex: 1;
+      margin-right: 1rem;
+    }
   }
 }
 .graf-text{
@@ -72,6 +87,13 @@
   line-height: 1.5;
   &--sm{
     font-size: $sm-sm;
+  }
+  &--big{
+    text-transform: uppercase;
+    font-size: $sm-sm;
+    @include mq (desktop,min){
+      font-size: $lg-h5;
+    }
   }
 }
 .main-text{
@@ -90,5 +112,51 @@
   }
   &--border-green{
     border-bottom: 3px solid $color-success;
+  }
+  &--big{
+    font-size: $sm-h1;
+    @include mq(desktop,min){
+      font-size: $md-h1;
+    }
+  }
+  &--iconed{
+    display: inline-block;
+    &:after{
+      display: inline-block;
+      content: "";
+      width: 105px;
+      height: 29px;
+      margin-left: 2rem;
+    }
+  }
+  &--iconed-fail:after{
+    background: url("/img/line-fail.svg") no-repeat;
+  }
+  &--iconed-up:after{
+    background: url("/img/line-up.svg") no-repeat;
+  }
+}
+.result{
+  display: none;
+  box-sizing: border-box;
+  text-align: center;
+  max-width: 124px;
+  padding: 0 1rem;
+  border: 1px solid $gray--light-secondary;
+  border-radius: 5px;
+  @include mq (tablet,min){
+    display: block;
+  }
+  &__text{
+    margin: .4rem 0;
+  }
+  &__text--iconed:before{
+    display: inline-block;
+    content: "";
+    margin-right:0.8rem;
+    background: url("/img/graph-arrowup-green.svg") no-repeat;
+    width: 9px;
+    height: 15px;
+
   }
 }

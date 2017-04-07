@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="10px" height="15px" viewBox="0 0 10 15" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 39 (31667) - http://www.bohemiancoding.com/sketch -->
+    <title>Group 10</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Индикаторы" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g transform="translate(-1037.000000, -2370.000000)" id="Group-25" stroke="#7ADD99" stroke-width="1.5">
+            <g transform="translate(1026.000000, 2337.000000)">
+                <g id="Group-21" transform="translate(11.000000, 32.000000)">
+                    <g id="Group-53" transform="translate(0.000000, 1.000000)">
+                        <g id="Group-10" transform="translate(5.000000, 7.500000) scale(1, -1) translate(-5.000000, -7.500000) translate(1.000000, 1.000000)">
+                            <path d="M3.75,0.655465971 L3.75,11.6875" id="Line" stroke-linecap="square"></path>
+                            <polyline id="Path-3" points="0 8 3.807724 12.8018151 7.7606344 8"></polyline>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

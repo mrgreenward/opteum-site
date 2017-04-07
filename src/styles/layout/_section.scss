@@ -104,3 +104,30 @@
    margin-left: 0;
  }
 }
+.section__img{
+  max-width: 100%;
+  width: 100%;
+  &--desk{
+    margin: 2rem 0;
+    padding: 0 1.6rem;
+    display: none;
+    @include mq (desktop,min){
+      display: block;
+    }
+  }
+  &--mob{
+    display: block;
+    @include mq (tablet,min){
+      display: none;
+    }
+  }
+  &--tablet{
+    display: none;
+    @include mq (tablet,min){
+      display: block;
+    }
+    @include mq (desktop,min){
+      display: none;
+    }
+  }
+}

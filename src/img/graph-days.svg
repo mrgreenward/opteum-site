@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="213px" height="87px" viewBox="0 0 213 87" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 39 (31667) - http://www.bohemiancoding.com/sketch -->
+    <title>Group 30</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="12.9569056%" y1="80.2446875%" x2="100%" y2="100%" id="linearGradient-1">
+            <stop stop-color="#FBD785" offset="0%"></stop>
+            <stop stop-color="#EE6A7E" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Индикаторы" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g transform="translate(-435.000000, -1675.000000)" id="Group-42">
+            <g transform="translate(435.000000, 1675.000000)">
+                <g id="Group-30">
+                    <path d="M141,86 L218.5,86" id="Line" stroke="#A9A9A9" stroke-linecap="square" stroke-dasharray="2,8"></path>
+                    <g id="Group-13" fill="url(#linearGradient-1)">
+                        <path d="M126,82 L132,82 L132,87 L126,87 L126,82 Z M112,68 L118,68 L118,87 L112,87 L112,68 Z M98,68 L104,68 L104,87 L98,87 L98,68 Z M84,49 L90,49 L90,87 L84,87 L84,49 Z M70,34 L76,34 L76,87 L70,87 L70,34 Z M56,27 L62,27 L62,87 L56,87 L56,27 Z M42,12 L48,12 L48,87 L42,87 L42,12 Z M28,4 L34,4 L34,87 L28,87 L28,4 Z M14,4 L20,4 L20,87 L14,87 L14,4 Z M0,0 L6,0 L6,87 L0,87 L0,0 Z" id="Combined-Shape"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

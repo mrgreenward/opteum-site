@@ -1,10 +1,18 @@
 .b-infografic{
-padding: 0 1.6rem;
+padding: 0 2.6rem;
+  max-width: 223px;
+
 }
 .step{
   position: relative;
   display: block;
   width: 100%;
+  margin-bottom: 1.5rem;
+  &__col{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
   &__item{
     background: $white;
     z-index: 999;
@@ -22,8 +30,8 @@ padding: 0 1.6rem;
     position: absolute;
     display: inline-block;
     top: 17px;
-    right: 50%;
-    width: 150%;
+    left: 0;
+    width: 350%;
     content:"";
     border-bottom: 1px solid $gray--light-primary;
   }
@@ -32,17 +40,19 @@ padding: 0 1.6rem;
     position: absolute;
     display: inline-block;
     top: 17px;
-    left: 111px;
-    width: 200%;
+    right: 0;
+    width: 165%;
     content:"";
     border-bottom: 1px solid $gray--light-primary;
+    @include mq(tablet,min){
+      width: 222%;
+    }
   }
-  &--last:after,&--last:before{
-
+  &--first:before{
+    display: none;
   }
   &--first:after{
-    right: -220px;
-    width: 20%;
+    left: 54%;
   }
   &__number{
   position: absolute;
@@ -52,9 +62,102 @@ padding: 0 1.6rem;
     top: 6px;
   }
 }
-.ster-row{
+.step-row{
+  margin: 2rem -1.6rem;
   display: flex;
   overflow: hidden;
   flex-wrap: wrap;
   justify-content: center;
+  @include mq(desktop,min){
+    justify-content: flex-start;
+  }
+}
+.infografic-obj{
+  text-align: left;
+  width: 100%;
+  margin: 4rem 0 0.5rem 0;
+  position: relative;
+  &__text{
+    text-transform: uppercase;
+    color: $gray;
+    font-size: $sm-sm;
+  }
+  &__input{
+    width: 211px;
+    border: 1px solid $gray--light-primary;
+    border-radius: 5px;
+    min-height: 35px;
+    padding-left: 1rem;
+    &::placeholder{
+      font-size: $md-h5;
+      color: $black;
+    }
+  }
+  &__icon{
+    position: absolute;
+    left: 50%;
+    bottom: -10px;
+  }
+}
+.infografic-obj--days{
+  & .infografic-text{
+    position: absolute;
+    right: 0;
+  }
+}
+.infografic-text{
+  display: inline-block;
+  &:after{
+    margin-left: 1rem;
+    display: inline-block;
+    content: "";
+    background: url('/img/graph-arrow.svg')no-repeat;
+    width: 8px;
+    height: 12px;
+  }
+  &--orders{
+    &:after{
+      background: url('/img/graph-arrow-up.svg')no-repeat;
+      width: 100%;
+      display: inline-block;
+      content: "";
+      width: 8px;
+      height: 12px;
+    }
+  }
+}
+.infografic-obj--orders{
+ & .infografic-text--orders{
+    position: absolute;
+  }
+}
+.infografic-obj--grace{
+  & .infografic-obj__text-grace{
+    display: block;
+    font-size: 8px;
+    text-transform: uppercase;
+    padding: 1em;
+    background: $gray-infografic--light;
+    margin-bottom: 0;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    &:before{
+      margin-right: 0.5rem;
+      display: inline-block;
+      content: "Т";
+      border-radius: 4px;
+      color: $white;
+      background: $orange;
+      padding: 0.4rem 0.5rem;
+    }
+  }
+  & .infografic-obj__grace-descr{
+    margin-top: 0;
+    font-size: $sm-sm;
+    line-height: 1.4;
+    background: $gray--lightest;
+    padding: 0.5rem 1.2rem;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+  }
 }

@@ -87,6 +87,9 @@
     @include mq(desktop,min){
       font-size: $lg-h1;
     }
+    &--motivation{
+      margin: 0;
+    }
   }
   &__btn{
     font-size: $sm-h2;
@@ -325,6 +328,7 @@
   display: block;
   max-width: 1178px;
   margin: 0 auto;
+  padding: 0;
 }
 .jumbotron__text-group--indicator{
   display: flex;
@@ -342,7 +346,7 @@
   @include mq (desktop,min){
     text-align: left;
     margin-top: 12.4rem;
-    margin-left: 2.4rem;
+    margin-left: 1.4rem;
     & .jumbotron__text{
       text-align: left;
     }
@@ -357,46 +361,15 @@
     margin-left: 0;
   }
 }
-
-/*
-.jumbotron-graph{
-  position: absolute;
-}
-.jumbotron-graph--mob{
-  display: block;
-  min-width: 320px;
-  min-height: 342px;
-  @include mq (tablet,min){
-    display:none;
+.jumbotron--motivation{
+  & .jumbotron__text{
+    text-align: left;
+    max-width: 468px;
+    @include mq(tablet,min){
+      max-width: 395px;
+    }
+    @include mq(desktop,min){
+      max-width: 468px;
+    }
   }
 }
-.jumbotron-graph--ipad{
-  display: none;
-  @include mq(tablet,min){
-    display: block;
-    right: 15px;
-  }
-  @include mq(desktop,min){
-    display: none;
-  }
-}
-.img-jumbotron--indicators{
-  position: static;
-  width: 100%;
-}
-.jumbotron-graph--desktop{
-  position: absolute;
-  right: 15px;
-  width: 1400px;
-  height: 661px;
-  top: 159px;
-  display: none;
-  @include mq(desktop,min){
-    display: block;
-  }
-}
-.img-jumbotron__img--indicators{
-  position: static;
-  height: 639px;
-  width: 712px;
-}*/
