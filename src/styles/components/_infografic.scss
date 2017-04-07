@@ -55,10 +55,13 @@
   justify-content: space-between;
   &--motivation{
     flex-wrap: wrap;
-    max-width: 500px;
+    max-width: 540px;
     & .infografic-piece__item{
       min-width: 250px;
       margin: 1.5rem auto;
+      @include mq (desktop,min){
+    margin-right: 2rem;
+      }
     }
   }
   @include mq (tablet,min){
@@ -130,10 +133,10 @@
     }
   }
   &--iconed-fail:after{
-    background: url("/img/line-fail.svg") no-repeat;
+    background: url("../img/line-fail.svg") no-repeat;
   }
   &--iconed-up:after{
-    background: url("/img/line-up.svg") no-repeat;
+    background: url("../img/line-up.svg") no-repeat;
   }
 }
 .result{
