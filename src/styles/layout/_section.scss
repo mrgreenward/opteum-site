@@ -84,18 +84,18 @@
   padding-right: 0;
   padding-left: 0;
   min-height: 663px;
-  background: url("/img/indicators-mob.svg")#E7EBF9 99% 103% no-repeat;
+  background: url("../img/indicators-mob.svg")#E7EBF9 99% 103% no-repeat;
   background-size: 332px;
   @include mq(phone-wide,min){
     background-size: 447px;
   }
   @include mq(tablet,min){
-    background: url("/img/indicators-ipad.svg")#E7EBF9 99% 110% no-repeat;
+    background: url("../img/indicators-ipad.svg")#E7EBF9 99% 110% no-repeat;
     min-height: 912px;
     background-size: 1047px;
   }
   @include mq(desktop,min){
-    background: url("/img/indicators-desktop.svg")#E7EBF9 100% 105% no-repeat;
+    background: url("../img/indicators-desktop.svg")#E7EBF9 100% 105% no-repeat;
     min-height: 801px;
     background-size: 1800px;
 
