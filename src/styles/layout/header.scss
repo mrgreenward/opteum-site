@@ -3,15 +3,25 @@
   display: flex;
   position: relative;
   flex-direction: row;
-  align-items: center;
   justify-content: flex-start;
   flex-wrap: wrap;
-
+  align-items: center;
+  @include mq (tablet,min){
+    align-items: baseline;
+  }
   &__btn{
+    order: 3;
     @include mq(tablet,min){
     }
   }
+  &__menu{
+    order: 5;
+    @include mq(tablet,min){
+      order: 2;
+    }
+  }
   &__burger{
+    order: 4;
     @include mq(tablet,min){
       display: none;
     }

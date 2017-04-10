@@ -1,15 +1,12 @@
 .nav{
+  max-width: 480px;
   text-align: center;
   margin: 0 auto;
   padding: 1rem 0;
-  order: 3;
   justify-content: flex-start;
+  flex-wrap: wrap;
   &--right{
     float: right;
-  }
-  @include mq(tablet,min){
-    width: initial;
-    order: inherit;
   }
 &--js-visible{
   right: 0;
@@ -18,6 +15,9 @@
   &__item{
     display: inline-block;
     margin: 1.5rem;
+    @include mq (phone-wide,min){
+      display: inline-block;
+    }
   }
   &__link{
     border-bottom: 2px solid transparent;
@@ -41,7 +41,7 @@
 }
 @include mq(tablet,min){
   .nav {
-    display: block;
+    max-width: 100%;
     display: flex;
     flex-direction: row;
     align-items: baseline;

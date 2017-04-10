@@ -63,7 +63,7 @@ padding: 0 2.6rem;
   }
 }
 .step-row{
-  margin: 2rem -1.4rem;
+  margin: 2rem -1.2rem;
   display: flex;
   overflow: hidden;
   flex-wrap: wrap;
@@ -111,13 +111,13 @@ padding: 0 2.6rem;
     margin-left: 1rem;
     display: inline-block;
     content: "";
-    background: url('/img/graph-arrow.svg')no-repeat;
+    background: url('../img/graph-arrow.svg')no-repeat;
     width: 8px;
     height: 12px;
   }
   &--orders{
     &:after{
-      background: url('/img/graph-arrow-up.svg')no-repeat;
+      background: url('../img/graph-arrow-up.svg')no-repeat;
       width: 100%;
       display: inline-block;
       content: "";

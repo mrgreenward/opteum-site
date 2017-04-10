@@ -7,7 +7,10 @@
   }
  &--jumbotron{
    background: $blue--lightest;
-   padding: 3.5rem 1.6rem;
+   padding: 3.5rem 1.2rem;
+   @include mq (desktop,min){
+     padding: 3.5rem 0;
+   }
  }
   &--jumbotron--uber{
     background: $white;
