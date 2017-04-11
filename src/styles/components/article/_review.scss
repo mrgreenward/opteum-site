@@ -1,0 +1,14 @@
+.review{
+  max-width: 438px;
+  word-wrap: break-word;
+  margin: 0 auto;
+  &__text{
+    font: $md-h2 GeorgiaBold;
+    text-align: center;
+    font-weight: bold;
+    line-height: 1.5;
+    @include mq (desktop,min){
+      font-size: $md-h1-5;
+    }
+  }
+}

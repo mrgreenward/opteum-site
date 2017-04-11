@@ -26,7 +26,8 @@ $color-graph-fail:  linear-gradient(to right, #fbd785, #ee6a7e);
 $color-form: #eeeeee;
 $color-form-focus: rgba(247, 165, 111, 0.6);
 $gradient-primary:  linear-gradient(to bottom, #e7ebf9, #fcfbf8);
-// breakpoints
+$color-article-text: rgba(54, 54, 54, 0.54);
+  // breakpoints
 $breakpoints: (
         "phone":        320px,
         "phone-wide":   480px,

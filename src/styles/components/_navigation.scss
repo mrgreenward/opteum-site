@@ -1,10 +1,22 @@
 .nav{
-  max-width: 480px;
+  position: absolute;
+  top: 60px;
+  z-index: 99;
+  background: white;
+  left: 0;
+  right: 0;
   text-align: center;
   margin: 0 auto;
   padding: 1rem 0;
-  justify-content: flex-start;
+  justify-content: center;
   flex-wrap: wrap;
+  box-shadow: $shadow-secondary;
+  @include mq (tablet,min){
+    position: static;
+    max-width: 480px;
+    justify-content: flex-start;
+    box-shadow: none;
+  }
   &--right{
     float: right;
   }

@@ -39,6 +39,16 @@
   &--primary{
     font-size: $lg-h4;
   }
+  &--tag{
+    font-size: $sm-sm;
+    padding: 1rem 1.8rem;
+    background: $gray--lightest;
+    color: $gray;
+    &:hover,&:focus{
+      background: $gray--lightest;
+      color: $gray;
+    }
+  }
   &--nav{
     font-size: $lg-h5;
     &:after{

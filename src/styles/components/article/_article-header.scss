@@ -1,0 +1,22 @@
+.article-header{
+  margin: 1.2em 0 1em 0;
+  @include mq (tablet,min){
+    margin: 2em 0 1em 0;
+  }
+
+}
+.text-section{
+  font-size: $sm-sm;
+  color: $orange;
+  text-transform: uppercase;
+  text-align: center;
+}
+.text-header{
+  font: $sm-h1 GothamProLight;
+  text-align: center;
+  line-height: 1.5;
+  margin: 0.5em 0;
+  @include mq (tablet,min){
+    font-size: $md-h1;
+  }
+}

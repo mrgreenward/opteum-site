@@ -39,7 +39,7 @@ var path = {
         html: 'src/*.html',
         js: 'src/js/main.js',
         vendorJs : 'src/js/vendors/**/*.*',
-        style: 'src/styles/style.scss',
+        style: 'src/styles/pages/*.*',
         img: 'src/img/**/*.*',
         fonts: 'src/fonts/**/*.*'
     },

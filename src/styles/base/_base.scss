@@ -21,3 +21,10 @@ p{
 .text--show{
   display: block;
 }
+.special-link{
+  color: $special-link;
+  text-decoration: underline;
+  &--indent{
+    margin-top: 0.6rem;
+  }
+}

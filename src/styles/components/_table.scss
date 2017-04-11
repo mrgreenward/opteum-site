@@ -2,6 +2,8 @@
   max-width: 768px;
   table-layout: fixed;
   border-collapse: separate;
+  word-wrap: break-word;
+  word-break: break-all;
   margin: 4rem auto;
  @include mq(tablet,min){
    padding: 0 4rem;
@@ -28,7 +30,12 @@
   & td{
     line-height: 1.5;
     box-sizing: content-box;
-    padding: 1rem 0;
+    padding: 1rem ;
+    word-wrap: break-word;
+    word-break: break-word;
+    & td:first-child{
+      padding-right: 1.2rem;
+    }
     @include mq(tablet,min){
       padding: 2rem 0;
       border-bottom: 1px solid $gray--lightest;
@@ -52,13 +59,10 @@
   }
   & tbody tr td:last-child{
     font-size: $md-h4;
+    padding-left: 1.2rem;
     @include mq (tablet,min){
       text-align: right;
       font-size: $md-h5;
     }
   }
-}
-.special-link{
-  color: $special-link;
-  text-decoration: underline;
 }

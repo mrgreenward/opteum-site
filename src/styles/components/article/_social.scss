@@ -1,0 +1,29 @@
+.social{
+  max-width: 292px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  word-break: break-all;
+  word-wrap: break-word;
+  @include mq (tablet,min){
+    flex-wrap: nowrap;
+    margin-left: auto;
+    justify-content: flex-end;
+  }
+  &__img-group{
+    margin-left: 1rem;
+    max-width: 185px;
+    min-width: 175px;
+    box-sizing: border-box;
+  }
+  &__text{
+    font-size: $md-h4;
+    color: $color-article-text;
+  }
+  &__img{
+    width: 32px;
+    height: 32px;
+    margin: 1rem 1rem 0 0;
+  }
+}

@@ -9,6 +9,7 @@
   margin: 0 0 3em;
   word-wrap: break-word;
   word-break: break-word;
+
   &--cloud{
     max-width: 368px;
   }
@@ -115,6 +116,20 @@
  }
   &__btn-price{
     margin-left: 0;
+  }
+  &--sm{
+    max-width: 137px;
+  }
+  &--article{
+    @include mq (tablet,min){
+      align-items: center;
+      text-align: center;
+      margin: 0 auto;
+    }
+    @include mq (desktop,min){
+      align-items: flex-start;
+      text-align: left;
+    }
   }
 }
 .big-text{
