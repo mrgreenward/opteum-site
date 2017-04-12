@@ -48,10 +48,12 @@ $(document).ready(function () {
 
     //send data
     function sendData() {
-        var serverUrl = 'http://localhost:8080/form';
+        var serverUrl = 'http://localhost:8080/form'; // /opteum-promo/server.php
         var
             name = $('.input[name="name"]', '.form').val(),
             phone = $('.input[name="number"]', '.form').val(),
+            url =  location.href,
+            time =  moment().unix(),
             email = $('.input[name="email"]', '.form').val();
 
         $.ajax({
@@ -62,12 +64,21 @@ $(document).ready(function () {
             data: {
                 "name": name,
                 "email": email,
-                "phone": phone
+                "phone": phone,
+                "url": url,
+                "time": time
             },
             cache: false,
             beforeSend: function (jqXHR, settings) {
                 $('.form__btn', '.form').prop('disabled', true);
-                
+
+                $('.modal--request').animate(200, function () {
+                    $('body').css('overflow','visible');
+                    $(this).css('display', 'none');
+                    $('.modal-backdrop').fadeOut(100, function () {
+                        $(this).remove();
+                    });
+                });
             },
             success: function (data, textStatus, jqXHR) {
                 /*    console.log(data, textStatus, jqXHR);*/
