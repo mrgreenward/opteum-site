@@ -1,17 +1,8 @@
-@import "article-header";
-@import "review";
-@import "people";
-@import "tags";
-@import "social";
+
 .article{
   max-width: 768px;
   padding: 0 1.2rem;
   margin: 0 auto;
-  &__date{
-    font: $sm-sm GothamProMedium;
-    color :  $gray--light-secondary;
-    text-align: center;
-  }
   &__content{
     @include mq (desktop,min){
       width: 968px;
@@ -35,7 +26,7 @@
     padding-left: 2rem;
   }
   &__footer{
-    margin-top: 5rem;
+    margin-top: 7rem;
     padding: 1rem 0;
     border-top: 1px solid $gray--lightest;
   }
@@ -46,6 +37,11 @@
   color: $color-article-text;
   font-size: $md-h4;
 }
+.text-descr{
+  font: $sm-sm GothamProMedium;
+  color :  $gray--light-secondary;
+  text-align: center;
+}
 .article-title{
   font-size: $md-h2;
   margin-bottom: 1em;
@@ -53,3 +49,9 @@
     font-size: $lg-h2;
   }
 }
+@import "article-header";
+@import "review";
+@import "people";
+@import "tags";
+@import "photo-block";
+@import "social";

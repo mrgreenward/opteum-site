@@ -23,6 +23,10 @@
     @include mq (phone,min){
       font-size: $lg-h4;
     }
+    &--wrap{
+      max-width: 332px;
+      margin: 0 auto;
+    }
   }
   &__btn{
     align-self: center;
@@ -95,7 +99,7 @@
     }
   }
   &::-webkit-input-placeholder{
-    font-size: $md-h5;
+    font-size: $md-h4;
     color:$gray--light-secondary;
   }
 }
@@ -143,5 +147,18 @@
 .checkbox.input--error + .label-box{
   &:before{
     border: 1px solid $color-error;
+  }
+}
+.form-title{
+    font: $sm-h1 GothamProLight;
+  text-align: center;
+  margin: 0 auto 4rem auto;
+    @include mq(tablet,min){
+      font-size: $md-h1;
+    }
+  &--touch-only{
+    @include mq (desktop,min){
+      display: none;
+    }
   }
 }

@@ -4,10 +4,12 @@ html{
   font-family: GothamProRegular;
 }
 body{
+  width: 100%;
   font-size: 1.4rem;
   height: 100%;
 }
 .b-page{
+  width: 100%;
   position: relative;
   flex-direction: column;
   padding: 0 0 1.5rem 0;
@@ -27,4 +29,17 @@ p{
   &--indent{
     margin-top: 0.6rem;
   }
+}
+.cross-out{
+  width: 19px;
+  height: 19px;
+  @include mq (tablet,min){
+    width: 23px;
+    height: 23px;
+  }
+  @include mq (desktop,min){
+    width: 30px;
+    height: 30px;
+  }
+
 }

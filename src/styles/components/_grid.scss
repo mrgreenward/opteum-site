@@ -43,6 +43,7 @@
     }
   }
 }
+
 .grid__item--mb-hide{
   display: none;
 }
@@ -88,5 +89,17 @@
   align-items: center;
   @include mq (tablet,min){
     align-items: flex-start;
+  }
+}
+.grid__item--desktop-only{
+  display: none;
+  @include mq(desktop,min){
+    display: block;
+  }
+}
+.grid__item--touch-only{
+  display: block;
+  @include mq(desktop,min){
+    display: none;
   }
 }

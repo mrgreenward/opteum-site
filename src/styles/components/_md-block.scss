@@ -7,19 +7,37 @@
   text-align: center;
   border-bottom: 1px solid $gray--light-primary;
   padding: 2.8rem;
-
+ &__title{
+   font: $sm-h1 GothamProLight;
+   @include mq(tablet,min){
+     font-size: $md-h1;
+   }
+   @include mq (desktop,min){
+     font-size: $lg-h1;
+   }
+   &--jumbotron{
+     text-align: left;
+     margin-right: auto;
+   }
+ }
   &__text{
     max-width: 100%;
     color: $gray;
     line-height: 1.5;
     font-weight: 100;
     word-wrap: break-word;
+    &--jumbotron{
+      font-size: $lg-h3;
+    }
   }
   &__img{
     max-width: 179px;
     max-height: 60px;
     margin: 2rem 2.4rem;
     vertical-align: middle;
+    &--align-left{
+      margin: 2rem 2.4rem 0 -1.2rem;
+    }
   }
   &:after{
     display: none;
@@ -68,7 +86,14 @@
   &--bordered{
     border-bottom: 1px solid $border-block;
   }
-}.md-block--price{
+  &--jumbotron{
+    max-width: 485px;
+    margin: 0 0 0 -2.4rem;
+    align-items: left;
+    text-align: left;
+  }
+}
+.md-block--price{
   & .md-block__img{
     max-width: 117px;
     max-height: 39px;

@@ -66,20 +66,22 @@ $(document).ready(function () {
             },
             cache: false,
             beforeSend: function (jqXHR, settings) {
-                $('.form__btn').prop('disabled', true);
+                $('.form__btn', '.form').prop('disabled', true);
+                
             },
             success: function (data, textStatus, jqXHR) {
                 /*    console.log(data, textStatus, jqXHR);*/
-                $('.form__btn').attr('data-modal', '.modal-success').Modal();
+                $('.form__btn', '.form').attr('data-modal', '.modal-success').Modal();
+
 
             },
             fail: function (jqXHR, textStatus) {
                 console.log('jqXHR, textStatus');
-                $('.form__btn').prop('data-modal', null).attr('data-modal', '.modal-fail').Modal();
+                $('.form__btn', '.form').prop('data-modal', null).attr('data-modal', '.modal-fail').Modal();
             },
             complete: function (jqXHR, textStatus) {
                 $('.form').trigger('reset');
-                $('.form__btn').prop('disabled', false);
+                $('.form__btn', '.form').prop('disabled', false);
             }
         });
     }
