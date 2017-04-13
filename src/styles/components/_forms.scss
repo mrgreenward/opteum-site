@@ -1,35 +1,53 @@
 .form{
+  display: flex;
+  flex-direction: column;
   box-sizing: border-box;
   max-width:768px;
   width: calc(96% - 10px);
   margin: 5rem auto 0 auto;
+  word-wrap: break-word;
   padding: 4.2rem 1.5rem;
   background: $white;
   @include mq (phone-wide,min){
     width: calc(90% - 10px);
     padding: 4.2rem 2.5rem;
   }
-
+  &__row{
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+  }
+  &__col{
+    padding: 0  1.2rem 0 0;
+    width: 50%;
+  }
+  &--payment{
+    width: 100%;
+    min-height: 302px;
+    margin: 0;
+  }
+  &--big{
+    max-width: 100%;
+  }
+  &--med{
+    max-width: 468px;
+  }
+  &--sm{
+    max-width: 268px;
+  }
   &__wrap{
     max-width: 332px;
+    width: 100%;
     margin: 5rem auto 0 auto;
     display: flex;
     flex-direction: column;
   }
-  &__text{
-    text-align: center;
-    color: $gray;
-    font: $sm-h5 GothamProLight;
-    @include mq (phone,min){
-      font-size: $lg-h4;
-    }
-    &--wrap{
-      max-width: 332px;
-      margin: 0 auto;
-    }
-  }
+
   &__btn{
     align-self: center;
+    &--payment{
+      margin-top: 3rem;
+    }
   }
 }
 .field{
@@ -38,6 +56,14 @@
   display: flex;
   flex-direction: column;
   margin-bottom: 2rem;
+  &--payment{
+    margin-top: 2rem;
+  }
+  &__wrap{
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+  }
   &__label{
     text-transform: uppercase;
     font-size: $sm-sm;
@@ -49,6 +75,15 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+  }
+  &__text{
+    color: $color-article-text;
+    font-size: $md-h3;
+  }
+  &__input{
+    &--wrapped{
+      width: 100%;
+    }
   }
 }
 .input{

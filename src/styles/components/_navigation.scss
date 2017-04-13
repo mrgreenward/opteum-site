@@ -18,6 +18,7 @@
     box-shadow: none;
     margin: 0;
   }
+
   &--right{
     float: right;
   }
@@ -81,4 +82,41 @@
 }
 .menu-button-js.is-active .burger-icon {
   @include burger-to-cross;
+}
+.nav--blog{
+  max-width: 342px;
+  margin: 0 auto;
+  display: block;
+  position: static;
+  color: $color-article-text;
+  box-shadow: none;
+  justify-content: flex-start;
+  text-align: left;
+  padding: 0 1.2rem;
+  @include mq (tablet,min){
+    width: 100%;
+    max-width: 100%;
+    justify-content: center;
+    text-align: center;
+  }
+  @include mq (desktop,min){
+    justify-content: flex-start;
+    text-align: left;
+  }
+  &-left{
+    & .nav__item{
+      margin-left: 0;
+      margin-right: 3rem;
+      @include mq (tablet,min){
+        margin-right: 4rem;
+        text-transform: inherit;
+      }
+      &:last-child{
+        margin-right: 0;
+      }
+    }
+  }
+  & .nav__link{
+    text-transform: inherit;
+  }
 }

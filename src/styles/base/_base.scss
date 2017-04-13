@@ -20,6 +20,10 @@ p{
 .title--text{
   text-align: left;
 }
+b{
+  font-weight: bold;
+  color: $black;
+}
 .text--show{
   display: block;
 }
@@ -42,4 +46,44 @@ p{
     height: 30px;
   }
 
+}
+  .text-title{
+    &--md{
+      font-size: $sm-h3;
+      @include mq (tablet,min){
+        font-size: $md-h3;
+      }
+      @include mq (tablet,min){
+        font-size: $lg-h3;
+      }
+    }
+    &--center{
+      text-align: center;
+    }
+  }
+ .base-text{
+   &--sm{
+     font-size: $sm-sm;
+   }
+   &--sm-bigger{
+     font-size: $md-h4;
+   }
+   &--center{
+     text-align: center;
+   }
+   &--upper{
+     text-transform: uppercase;
+   }
+  font:$md-h5 GothamProRegular;
+   line-height: 1.5;
+   &--soft{
+     color: $color-article-text;
+   }
+  &--big{
+    font-size: $md-h1;
+    font-weight: bold;
+  }
+  &--color{
+    color: $orange;
+  }
 }

@@ -1,6 +1,6 @@
 $(document).ready(function () {
     //validation
-        $('.form').validate({
+       $('.form').validate({
             rules: {
                 name:{
                     required: true
@@ -40,8 +40,8 @@ $(document).ready(function () {
                 // Don't show error
             },
             onkeyup: false,
-            submitHandler: function (form) {
-                sendData()
+            submitHandler: function () {
+                sendData();
             }
         });
 
@@ -53,7 +53,8 @@ $(document).ready(function () {
             name = $('.input[name="name"]', '.form').val(),
             phone = $('.input[name="number"]', '.form').val(),
             url =  location.href,
-            time =  moment().unix(),
+            time =  Math.round(new Date().getTime() / 1000),
+            comment = $('.checkbox:checked', '.form').val(),
             email = $('.input[name="email"]', '.form').val();
 
         $.ajax({
@@ -66,6 +67,7 @@ $(document).ready(function () {
                 "email": email,
                 "phone": phone,
                 "url": url,
+                "comment": comment,
                 "time": time
             },
             cache: false,
@@ -84,7 +86,6 @@ $(document).ready(function () {
                 /*    console.log(data, textStatus, jqXHR);*/
                 $('.form__btn', '.form').attr('data-modal', '.modal-success').Modal();
 
-
             },
             fail: function (jqXHR, textStatus) {
                 console.log('jqXHR, textStatus');
@@ -96,5 +97,4 @@ $(document).ready(function () {
             }
         });
     }
-
-})
+});
