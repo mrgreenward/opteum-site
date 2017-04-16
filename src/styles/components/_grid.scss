@@ -47,7 +47,7 @@
 .grid__item--mb-hide{
   display: none;
 }
-@include mq(phone-wide,min){
+@include mq(phone,min){
   .grid__row--sm {
     flex-direction: row;
   }

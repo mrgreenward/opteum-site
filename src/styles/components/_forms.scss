@@ -16,24 +16,49 @@
     display: flex;
     justify-content: space-between;
     align-items: baseline;
+    flex-direction: column;
+    @include mq (tablet,min){
+      flex-direction: row;
+    }
   }
   &__col{
     padding: 0  1.2rem 0 0;
-    width: 50%;
+    flex: 1 1 auto;
+  }
+  &__line{
+    border-bottom: 1px solid $gray--lightest;
+    width: calc(100% + 5rem);
+    margin: 0 -2.5rem;
+  }
+  &__header{
+    margin-bottom: 5.6rem;
+  }
+  &__body{
+    margin-top: 2.6rem;
   }
   &--payment{
     width: 100%;
+    min-width: 288px;
     min-height: 302px;
-    margin: 0;
+    margin: 0 auto;
+    @include mq (tablet,min){
+      margin: 0;
+    }
   }
   &--big{
-    max-width: 100%;
+      width:100%;
   }
   &--med{
-    max-width: 468px;
+        @include mq (desktop,min){
+     max-width: 468px;
+    width: 430px;
+    }
   }
   &--sm{
-    max-width: 268px;
+      width:288px;
+        @include mq (tablet,min){
+      max-width: 268px;
+    }
   }
   &__wrap{
     max-width: 332px;

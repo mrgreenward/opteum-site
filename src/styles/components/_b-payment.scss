@@ -1,0 +1,24 @@
+.pay-img{
+  width: 100%;
+}
+.b-payment{
+  display: block;
+  width: 105px;
+  box-sizing: border-box;
+  padding: 2rem;
+  border: 1px solid $gray--lightest;
+   margin: 1.2rem;
+  @include mq (tablet,min){
+    width:144px;
+  }
+  @include mq (desktop,min){
+   
+  }
+  &:hover{
+    transition: 0.5s;
+    border: 2px solid $special-link ;
+  }
+  &__img{
+  max-width: 100%;
+  }
+}
