@@ -1,7 +1,7 @@
 html{
   height: 100%;
   font-size: 62.5%;
-  font-family: GothamProRegular;
+  font-family: GothamProRegular,sans-serif;
 }
 body{
   width: 100%;
@@ -74,7 +74,7 @@ b{
    &--upper{
      text-transform: uppercase;
    }
-  font:$md-h5 GothamProRegular;
+  font:$md-h5 GothamProRegular,sans-serif;
    line-height: 1.5;
    &--soft{
      color: $color-article-text;
@@ -87,3 +87,6 @@ b{
     color: $orange;
   }
 }
+ .icon-link{
+   margin-right: 3rem;
+ }

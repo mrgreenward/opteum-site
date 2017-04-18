@@ -1,3 +1,4 @@
+
 .modal{
   display: none;
   overflow: auto;
@@ -16,7 +17,7 @@
   margin: auto;
   max-width: calc(100% - 60px);
 
-  @include mq (desktop,min){
+  @include mq (tablet,min){
     max-width: 640px;
   }
   &--status{
@@ -50,13 +51,19 @@
   }
 
   &__text{
-    font: $md-h2 GothamProRegular;
+    font: $md-h5 GothamProRegular,sans-serif;
     text-align: center;
     line-height: 1.5;
+    @include mq (tablet,min){
+      font-size: $md-h2;
+    }
   }
   &__form{
     margin: 2rem auto;
+    width: 100%;
     @include mq (desktop,min){
+      max-width: 768px;
+      width: auto;
       margin: 0;
       float: right;
     }

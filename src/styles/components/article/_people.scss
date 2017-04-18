@@ -14,10 +14,10 @@
   &__text{
     text-align: center;
     &--name{
-      font: $sm-h5 GothamProRegular;
+      font: $sm-h5 GothamProRegular,sans-serif;
     }
     &--company{
-      font: $sm-sm GothamProMedium;
+      font: $sm-sm GothamProMedium,sans-serif;
       color: $gray;
     }
   }

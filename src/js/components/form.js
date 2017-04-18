@@ -1,60 +1,103 @@
 $(document).ready(function () {
     //validation
-       $('.form').validate({
-            rules: {
-                name:{
-                    required: true
-                },
-
-                email:{
-                    required: true,
-                    email: true
-                },
-                number:{
-                    required: true
-                },
-                type: {
-                    required: true
-                }
+    $('.form--request').validate({
+        rules: {
+            name: {
+                required: true
             },
-            messages:{
-                name:{
-                    required: ""
-                },
 
-                email:{
-                    required: ""
+            email: {
+                required: true,
+                email: true
+            },
+            number: {
+                required: true
+            },
+            type: {
+                required: true
+            },
+        },
+        messages:{
+            name:{
+                required: ""
+            },
 
-                },
-                number: {
-                    required: ""
-                },
-                type: {
-                    required: ""
-                }
+            email:{
+                required: ""
 
             },
-            errorClass: 'input--error',
-            validClass: 'input--success',
-            errorPlacement: function(error, element) {
-                // Don't show error
+            number: {
+                required: ""
             },
-            onkeyup: false,
-            submitHandler: function () {
-                sendData();
+            type: {
+                required: ""
             }
-        });
+        },
+        errorClass: 'input--error',
+        validClass: 'input--success',
+        errorPlacement: function(error, element) {
+            // Don't show error
+        },
+        onkeyup: false,
+        submitHandler: function () {
+            sendData();
+        }
+    });
 
+    $('.form--payment').validate({
+        rules: {
+            service:{
+                required: true
+            },
+        },
+        messages:{
+            service: {
+                required: ""
+            }
+
+        },
+        errorClass: 'input--error',
+        validClass: 'input--success',
+        errorPlacement: function(error, element) {
+            // Don't show error
+        },
+        onkeyup: false,
+        submitHandler: function () {
+
+        }
+    });
+
+    $('#payment_types').validate({
+        rules: {
+            payment:{
+                required: true
+            }
+        },
+        messages:{
+            payment: {
+                required: ""
+            }
+        },
+        errorClass: 'input--error',
+        validClass: 'input--success',
+        errorPlacement: function(error, element) {
+            // Don't show error
+        },
+        onkeyup: false,
+        submitHandler: function () {
+
+        }
+    });
 
     //send data
     function sendData() {
-        var serverUrl = 'http://localhost:8080/form'; // /opteum-promo/server.php
+        var serverUrl = '/opteum-promo/data/server.php'; // /opteum-promo/server.php
         var
             name = $('.input[name="name"]', '.form').val(),
             phone = $('.input[name="number"]', '.form').val(),
             url =  location.href,
             time =  Math.round(new Date().getTime() / 1000),
-            comment = $('.checkbox:checked', '.form').val(),
+            typeClient = $('.checkbox:checked', '.form').val(),
             email = $('.input[name="email"]', '.form').val();
 
         $.ajax({
@@ -67,7 +110,7 @@ $(document).ready(function () {
                 "email": email,
                 "phone": phone,
                 "url": url,
-                "comment": comment,
+                "typeClient": typeClient,
                 "time": time
             },
             cache: false,

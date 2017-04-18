@@ -2,23 +2,29 @@
   width: 100%;
 }
 .b-payment{
-  display: block;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  word-wrap: break-word;
   width: 105px;
+  height: 81px;
   box-sizing: border-box;
-  padding: 2rem;
+  padding: 0.5rem 2rem ;
   border: 1px solid $gray--lightest;
-   margin: 1.2rem;
+  border-radius: 4px;
+   margin:0.6rem;
   @include mq (tablet,min){
-    width:144px;
+    width:142px;
+    margin: 1.2rem 2.4rem 1.2rem 0;
   }
   @include mq (desktop,min){
    
   }
   &:hover{
-    transition: 0.5s;
     border: 2px solid $special-link ;
   }
   &__img{
+    margin: auto;
   max-width: 100%;
   }
 }

@@ -3,104 +3,65 @@
     <p class="title-text jumbotron__title">Пополнение службы</p>
 </div>
     <div class="section section--md grid">
-        <div class="grid__row grid__row--align-top grid__row--md">
-            <div class="grid__item">
-                <form class="form form--payment form--med">
+                <form class="form form--payment">
                     <p class="text-title text-title--md">
                         Выберите пополняемую службу
                     </p>
                     <div class="field field--payment">
                         <label class="base-text base-text--sm base-text--upper base-text--soft">ВВЕДИТЕ КОД СЛУЖБЫ</label>
                         <div class="field__wrap">
-                            <input name="email" type="text" class="field__input field__input--wrapped input">
+                            <input name="service" type="text" class="field__input field__input--wrapped input">
                             <span class="field__text">.opteum.ru</span>
                         </div>
                     </div>
                     <button class="btn form__btn form__btn--payment">Готово</button>
                 </form>
-            </div>
-            <div class="grid__item">
-                <div class="form form--payment form--sm">
-                    <p class="text-title text-title--md">Бонус за доверие</p>
-                    <p class="base-text base-text--big base-text--color">-5%</p>
-                    <p class="base-text base-text--soft">Теперь при  оплате свыше <b>30 000 руб</b> Вы получаете скидку <b>5%.</b></p>
-                </div>
-            </div>
-        </div>
+            <!--<div class="grid__item">-->
+                <!--<div class="form form&#45;&#45;payment form&#45;&#45;sm">-->
+                    <!--<p class="text-title text-title&#45;&#45;md">Бонус за доверие</p>-->
+                    <!--<p class="base-text base-text&#45;&#45;big base-text&#45;&#45;color">-5%</p>-->
+                    <!--<p class="base-text base-text&#45;&#45;soft">Теперь при  оплате свыше <b>30 000 руб</b> Вы получаете скидку <b>5%.</b></p>-->
+                <!--</div>-->
+            <!--</div>-->
                     <div class="jumbotron section__jumbotron-payment">
                 <p class="jumbotron__text">Внимание! Комиссия при оплате через QIWI - <b>6%</b>, остальные способы оплаты онлайн - <b>2,7%</b>. При безналичной оплате на расчетный счет- <b>0%</b>.</p>
             </div>
         <div class="grid__row">
              <div class="grid__item">
-                    <form id="payment_types" class="form form--payment form--big">
-                    <div class="form__header">
-                        <p class="text-title text-title--center text-title--md">
-                            Выберите способ оплаты
-                        </p>
-                        <div class="form__row">
-                            <div class=" form__col">
-                                <p class="base-text base-text--sm base-text--upper base-text--soft">Описание</p>
-                                <p class="base-text base-text--sm-bigger">Автоматический платеж</p>
-                            </div>
-                            <div class=" form__col">
-                                <label class="base-text base-text--sm base-text--upper base-text--soft">Сумма</label>
-                                <div class="field__wrap">
-                                    <input name="email" type="text" class="field__input field__input--wrapped input">
-                                    <span class="field__text">RUB</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="form__line"></div>
-                    <div class="form__body">
-                        <p class="base-text base-text--sm base-text--upper base-text--soft">Способы оплаты</p>
-                        <div class="grid">
-                            <div class="grid__row grid__row--sm">
-                                        <a href="#" class="b-payment">
-                                            <div class="b-payment__img">
-                                                <img src="img/pay-cards.png" alt="" class="pay-img">
-                                            </div>
-                                        </a>
-                                        <a href="#" class="b-payment">
-                                            <div class="b-payment__img">
-                                                <img src="img/pay-cards.png" alt="" class="pay-img">
-                                            </div>
-                                        </a>
-                                        <a href="#" class="b-payment">
-                                            <div class="b-payment__img">
-                                                <img src="img/pay-cards.png" alt="" class="pay-img">
-                                            </div>
-                                        </a>
-                                        <a href="#" class="b-payment">
-                                            <div class="b-payment__img">
-                                                <img src="img/pay-cards.png" alt="" class="pay-img">
-                                            </div>
-                                        </a>
-                                        <a href="#" class="b-payment">
-                                            <div class="b-payment__img">
-                                                <img src="img/pay-cards.png" alt="" class="pay-img">
-                                            </div>
-                                        </a>
-
-                                        <a href="#" class="b-payment">
-                                            <div class="b-payment__img">
-                                                <img src="img/pay-cards.png" alt="" class="pay-img">
-                                            </div>
-                                        </a>
-                                        <a href="#" class="b-payment">
-                                            <div class="b-payment__img">
-                                                <img src="img/pay-cards.png" alt="" class="pay-img">
-                                            </div>
-                                        </a>
-                                        <a href="#" class="b-payment">
-                                            <div class="b-payment__img">
-                                                <img src="img/pay-cards.png" alt="" class="pay-img">
-                                            </div>
-                                        </a>
-                            </div>
-                        </div>
-                    </div>
-                </form>
+                 <form id="payment_types" class="form form--payment form--big">
+                     <script type='text/javascript' src='https://paymaster.ru/ru-RU/widget/Basic/1?LMI_MERCHANT_ID=5805cdf1-f76d-4e6e-8ba6-e005ae74528f&LMI_PAYMENT_AMOUNT=100&LMI_PAYMENT_DESC=Test+payment&LMI_CURRENCY=RUB'></script>
+                     <script>
+                         $(document).ready(function () {
+                             $('.pmheader').addClass('text-title text-title--md');
+                             $('.pmwidget.pmwidgetDone').css({
+                                 'width':'100%'
+                         });
+                             $('#pmOpenAmount').addClass('field__input field__input--wrapped input').css('width','300px');
+                            $('strong','.pmwidgetDone').addClass('base-text base-text--sm base-text--upper base-text--soft');
+                             $('p','.pmwidgetDone').addClass('base-text base-text--sm base-text--upper base-text--soft');
+                             $('.pmpaymenttype','.pmwidgetDone').addClass('base-text base-text--sm base-text--upper base-text--soft').css('margin','20px 0 10px 0');
+                             $('.payList').css({
+                                 'margin': '0 auto',
+                             'overflow': 'hidden',
+                             'display': 'flex',
+                             'flex-wrap': 'wrap',
+                             'justify-content': 'center'
+                             })
+                         })
+                     </script>
+                     <style>
+                         .pmwidget.pmwidgetDone{
+                             border:none;
+                             width: 100%
+                         }
+                         .payList{
+                             margin-top: 20px;
+                         }
+                         .pmwidget .pm-item:hover{
+                             border:1px solid #f8a56f;
+                         }
+                     </style>
+                 </form>
              </div>
         </div>
     </div>

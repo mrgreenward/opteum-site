@@ -6,7 +6,7 @@
   flex-direction: column;
   align-items: center;
   text-align: center;
-  margin: 0 0 3em;
+  margin: 0 auto 3em auto;
   word-wrap: break-word;
   word-break: break-word;
 
@@ -113,10 +113,12 @@
     text-align: left;
   }
  &--jumbotron{
-   max-width: 228px;
+   max-width: 468px;
    text-align: center;
    align-items: center;
-   @include mq (phone-wide){
+
+   @include mq (tablet,min){
+     max-width: 248px;
      align-items: flex-start;
      text-align: left;
    }
@@ -195,7 +197,7 @@
   }
   & .b-article__link{
     @extend .b-article__text;
-    font-family: GothamProBold;
+    font-family: GothamProBold,sans-serif;
     color: $orange;
     margin-top: 1.5rem;
   }
@@ -279,13 +281,13 @@
     }
   }
   & .b-article__text{
-    font:$md-h5 GothamProLight;
+    font:$md-h5 GothamProLight,sans-serif;
     margin: 0;
     @include mq (tablet,min){
      font-size: $md-h6;
     }
     &--facebook{
-      font: $lg-h2 ProximaNova-Bold;
+      font: $lg-h2 ProximaNova-Bold,sans-serif;
       color: $orange;
     }
   }

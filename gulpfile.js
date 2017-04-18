@@ -11,6 +11,7 @@ var gulp = require('gulp'),
     rimraf = require('rimraf'),
     browserSync = require("browser-sync"),
     reload = browserSync.reload,
+    uncss = require('gulp-uncss'),
     bust = require('gulp-buster'),
     argv = require('yargs').argv, //передача параметров таска из консоли
     gulpIfElse = require('gulp-if'); // c помощью него разделяю окружение //.pipe( ifElse(condition, ifCallback, elseCallback) )
@@ -34,6 +35,13 @@ var path = {
         style: 'build/styles/',
         img: 'build/img/',
         fonts: 'build/fonts/'
+    },
+    src_design : {
+        js : 'src_design/js',
+        vendorJs : 'src_design/js/vendors/',
+        style: 'src_design/styles/',
+        img: 'src_design/img/',
+        fonts: 'src_design/fonts/'
     },
     src: { //Пути откуда брать исходники
         html: 'src/*.html',
@@ -89,7 +97,8 @@ gulp.task('js:build', function () {
         .pipe(gulpIfElse(argv.production,uglify()))
         .pipe(gulpIfElse(argv.dev, sourcemaps.write()))
         .pipe(gulpIfElse(argv.production,
-            gulp.dest(path.dist.js),
+            gulp.dest(path.dist.js)&&
+            gulp.dest(path.src_design.js),
             //else
             gulp.dest(path.build.js)))
         .pipe(reload({stream: true}));
@@ -98,7 +107,8 @@ gulp.task('js:build', function () {
 gulp.task('vendorJs:build',function () {
     gulp.src(path.src.vendorJs)
         .pipe(gulpIfElse(argv.production,
-            gulp.dest(path.dist.vendorJs),
+            gulp.dest(path.dist.vendorJs)&&
+            gulp.dest(path.src_design.vendorJs),
             //else
             gulp.dest(path.build.vendorJs)))
 });
@@ -112,7 +122,8 @@ gulp.task('style:build', function () {
         .pipe(gulpIfElse(argv.production, cleanCss()))
         .pipe(gulpIfElse(argv.dev,sourcemaps.write())) //записать мапы только для dev
         .pipe(gulpIfElse(argv.production,
-            gulp.dest(path.dist.style),
+            gulp.dest(path.dist.style)&&
+            gulp.dest(path.src_design.style),
             // else
             gulp.dest(path.build.style)))
         .pipe(reload({stream: true}));
@@ -128,13 +139,15 @@ gulp.task('image:build', function () {
             interlaced: true
         }))
         .pipe(gulp.dest(path.build.img))
-        .pipe(gulp.dest(path.dist.img));
+        .pipe(gulp.dest(path.dist.img))
+        .pipe(gulp.dest(path.src_design.img));
 });
 //fonts
 gulp.task('fonts:build', function() {
     gulp.src(path.src.fonts)
         .pipe(gulp.dest(path.build.fonts))
         .pipe(gulp.dest(path.dist.fonts))
+        .pipe(gulp.dest(path.src_design.fonts))
 });
 // get all
 gulp.task('build', [

@@ -7,7 +7,7 @@
   flex-wrap: wrap;
   align-items: center;
   @include mq (tablet,min){
-    align-items: baseline;
+    align-items: center;
   }
   &__btn{
     order: 3;

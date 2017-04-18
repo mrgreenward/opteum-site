@@ -21,6 +21,10 @@
     @include mq(tablet,min){
       display: block;
     }
+    @include mq(desktop,min){
+      width: 823px;
+      height: 617px;
+    }
   }
 }
 .img-block__arrow{
@@ -28,7 +32,7 @@
 }
 @include mq (tablet,min){
   .orange-text{
-    font-family: GothamProLight;
+    font-family: GothamProLight,sans-serif;
     color: $orange;
     line-height: 1.5;
     text-align: right;
