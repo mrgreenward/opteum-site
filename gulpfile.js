@@ -11,7 +11,6 @@ var gulp = require('gulp'),
     rimraf = require('rimraf'),
     browserSync = require("browser-sync"),
     reload = browserSync.reload,
-    uncss = require('gulp-uncss'),
     bust = require('gulp-buster'),
     argv = require('yargs').argv, //передача параметров таска из консоли
     gulpIfElse = require('gulp-if'); // c помощью него разделяю окружение //.pipe( ifElse(condition, ifCallback, elseCallback) )
@@ -97,20 +96,20 @@ gulp.task('js:build', function () {
         .pipe(gulpIfElse(argv.production,uglify()))
         .pipe(gulpIfElse(argv.dev, sourcemaps.write()))
         .pipe(gulpIfElse(argv.production,
-            gulp.dest(path.dist.js)&&
-            gulp.dest(path.src_design.js),
+            gulp.dest(path.dist.js),
             //else
             gulp.dest(path.build.js)))
+        .pipe(gulpIfElse(argv.production, gulp.dest(path.src_design.js)))
         .pipe(reload({stream: true}));
 
 });
 gulp.task('vendorJs:build',function () {
     gulp.src(path.src.vendorJs)
         .pipe(gulpIfElse(argv.production,
-            gulp.dest(path.dist.vendorJs)&&
-            gulp.dest(path.src_design.vendorJs),
+            gulp.dest(path.dist.vendorJs),
             //else
             gulp.dest(path.build.vendorJs)))
+        .pipe(gulpIfElse(argv.production, gulp.dest(path.src_design.vendorJs)))
 });
 
 //styles
@@ -122,10 +121,10 @@ gulp.task('style:build', function () {
         .pipe(gulpIfElse(argv.production, cleanCss()))
         .pipe(gulpIfElse(argv.dev,sourcemaps.write())) //записать мапы только для dev
         .pipe(gulpIfElse(argv.production,
-            gulp.dest(path.dist.style)&&
-            gulp.dest(path.src_design.style),
+            gulp.dest(path.dist.style),
             // else
             gulp.dest(path.build.style)))
+        .pipe(gulpIfElse(argv.production, gulp.dest(path.src_design.style)))
         .pipe(reload({stream: true}));
 });
 
