@@ -1,0 +1,58 @@
+<div class="b-page__section b-page__section--header">
+<div class="section header">
+    <a href="/" class="logo-company">Opteum</a>
+        <ul class="header__menu nav">
+            <script>
+                $(document).ready(function () {
+                    $('.nav__link, .arrow-down').DropDown();
+                });
+            </script>
+            <li class="nav__item">
+                <div class="dropdown-menu">
+                    <a href="#" class="nav__link">Продукты</a><div class="arrow-down"></div>
+                    <ul class="dropdown-menu__list dropdown-list">
+                        <!--
+                        <li class="dropdown-list__item">
+                            <a href="#" class="item-container">
+                                    <p class="item-container__link dropdown-list__title"><div class="icon-item">Т</div>Таксиграция</p>
+                                    <p class="item-container__text">Финансы и зарплата</p>
+                            </a>
+                        </li> 
+                        -->
+                        <li class="dropdown-list__item">
+                            <a href="/indicators" class="item-container">
+                                <p class="item-container__link dropdown-list__title"> <div class="icon-item">Т</div>Таксиграция</p>
+                                <p class="item-container__text">Мотивация</p>
+                             </a>
+                        </li>
+                        <li class="dropdown-list__item">
+                            <a href="/about" class="item-container">
+                                <p class="item-container__link dropdown-list__title"> <div class="icon-item icon-item--opteum">Т</div>Оптеум</p>
+                                <p class="item-container__text">Для классических таксопарков и диспетчерских</p>
+                                </a>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+            <li class="nav__item"><a href="/price" class="nav__link">Цены</a></li>
+            <li class="nav__item"><a href="http://help.opteum.ru" class="nav__link">Поддержка</a></li>
+            <li class="nav__item"><a href="http://taxigrace.com/blog" class="nav__link">Кейсы</a></li>
+        </ul>
+        <a href="#form" data-modal=".modal--request" class="nav-anchor btn btn--primary  btn--nav header__btn btn--action" ></a>
+    <script>
+        $(document).ready(function() {
+            $('.btn--action').on('click',function () {
+                if ($('#form').length < 1){
+                    console.log('passed');
+                    $(this).Modal();
+                }else{
+                 return false
+                }
+            })
+        })
+    </script>
+        <a href="javascript:void(0)" class="header__burger menu-button-js">
+            <span class="burger-icon"></span>
+        </a>
+</div>
+</div>

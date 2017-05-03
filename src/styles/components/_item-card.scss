@@ -1,0 +1,35 @@
+.item-card{
+  width: 125px;
+  word-wrap: break-word;
+  text-align: center;
+  margin: 0 1rem 4rem 1rem;
+  @include mq(tablet,min){
+    width: 170px;
+  }
+  @include mq (desktop,min){
+    text-align: left;
+  }
+  &__img{
+    width:80px;
+    height: 80px;
+    overflow: hidden;
+    border-radius: 50%;
+    background: $gray--lightest;
+    margin: auto;
+    @include mq (desktop,min){
+      margin-left: 0 ;
+    }
+  }
+  &__prof{
+    margin-top: 0;
+    font-size: $sm-sm;
+    @include mq(desktop,min){
+      font-size: $sm-h5;
+    }
+  }
+}
+.img-card{
+  width: 100%;
+  height: 100%;
+  text-indent: 100vw;
+}

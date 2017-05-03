@@ -1,0 +1,12 @@
+.short-block{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+ margin: 2rem auto;
+  @include mq(phablet,min){
+  margin:2rem 2rem 0 0;
+}
+  &--sm{
+    width:138px;
+  }
+}

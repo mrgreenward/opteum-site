@@ -1,0 +1,8 @@
+<script>
+    var ua = navigator.userAgent;
+    var isAndroidNative = ((ua.indexOf('Mozilla/5.0') > -1) && (ua.indexOf('Android') > -1) && !(ua.indexOf('Chrome') > -1) && (ua.indexOf('Version') > -1));
+    //document.write('' + 'Browser name = ' + objbrowserName + '<br>' + 'Full version = ' + objfullVersion + '<br>' + 'Major version = ' + objBrMajorVersion + '<br>' + 'navigator.appName = ' + navigator.appName + '<br>' + 'ua = ' + navigator.userAgent + '<br>')
+    if(isAndroidNative || navigator.userAgent.match('MSIE 8.0') || navigator.userAgent.match('MSIE 9.0')) {
+        window.location = '/src_design/oldbrowser/index.html';
+    }
+</script>

@@ -12,6 +12,10 @@
 
   &--cloud{
     max-width: 368px;
+    & .b-article__img{
+      width: 105px;
+      height: 97px;
+    }
   }
   &--motivation{
     max-width: 368px;
@@ -31,6 +35,7 @@
   @include mq(tablet-freak,min){
   max-width: 286px;
   min-width: 199px;
+  margin-right: 5rem;
 }
 }
   &--price{

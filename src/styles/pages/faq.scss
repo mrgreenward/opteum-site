@@ -1,0 +1,53 @@
+@import "../helpers/_variables";
+@import "../helpers/_mixins";
+@import "../components/jumbotron";
+@import "../components/dropdown";
+@import "../components/b-accordeon";
+@import "../components/list";
+
+.b-page{
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  &__wrapper{
+    flex:1;
+  }
+}
+
+.dropdown{
+  border-top:1px solid $gray--lightest;
+  &--sm{
+    max-width: 368px;
+  }
+  &--md{
+    max-width: 568px;
+  }
+  &__item{
+    @extend .dropdown-list__item;
+    background: $white;
+    border-top:1px solid $gray--lightest;
+    &--is-opten{
+    }
+  }
+}
+.icon-item--question{
+  background: $gray--lightest;
+  color: #363636;
+  padding: 0.3rem 0.6rem;
+}
+.icon-item--active{
+  background: $btn-primary-bgcolor;
+  color: $white;
+}
+.arrow-svg{
+  margin-left: 2rem;
+}
+.arrow-svg-down{
+  margin-left: 2rem;
+  transition: 0.5s;
+  transform: rotate(90deg);
+}
+.b-page__section--jumbotron{
+  border-bottom: none;
+  padding-bottom: 0;
+}

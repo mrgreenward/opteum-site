@@ -40,6 +40,7 @@ $(document).ready(function () {
         },
         onkeyup: false,
         submitHandler: function () {
+            yaCounter21150820.reachGoal('ORDER');
             sendData();
         }
     });
@@ -91,7 +92,7 @@ $(document).ready(function () {
 
     //send data
     function sendData() {
-        var serverUrl = '/opteum-promo/data/server.php'; // /opteum-promo/server.php
+        var serverUrl = '/src_design/data/server.php'; // /opteum-promo/server.php
         var
             name = $('.input[name="name"]', '.form').val(),
             phone = $('.input[name="number"]', '.form').val(),

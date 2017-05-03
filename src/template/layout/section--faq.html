@@ -1,0 +1,33 @@
+<div class="b-page__section b-page__section--blue">
+    <div class="section section--md">
+                        <script>
+                            $(document).ready(function () {
+                                $('.accordeon__title').on('click',function () {
+                                    var current = $(this).parent();
+                                    $('.accordeon__hint', current).slideToggle();
+                                    $('.icon-item--question',current).toggleClass('icon-item--active');
+                                    $('.arrow-svg', current).toggleClass('arrow-svg-down');
+                                });
+                            });
+                        </script>
+                        <div class="b-accordeon">
+                            <div class="b-accordeon__title">
+                                <div class="icon-item icon-item--opteum"></div>
+                                <div class="b-accordeon__text-wrap">
+                                    <span class="base-text base-text--med">Оптеум</span>
+                                    <p class="base-text base-text--soft">Для классичсеких таксопарков и диспетческих</p>
+                                </div>
+
+                            </div>
+                            <div class="accordeon">
+                                <div class="accordeon__hint">
+                                    <ul class="list list--num accordeon__list">
+                                        <li class="list__item base-text base-text--soft base-text--sm">В случае подключении сим-карт к системе (GSM-номеров) необходимо приобрести VOIP-GSM шлюз на необходимое количество сим-карт. Как настроить шлюз и что для этого нужно описано в статье по ссылке. Шлюз необходимо разместить в сети со статическим IP-адресом.</li>
+                                        <li class="list__item base-text base-text--soft base-text--sm">В случае подключении сип-номера, необходимо предоставление адреса сервера, логина и пароля от сип-номера. </li>
+                                    </ul>
+                                </div>
+                            </div>
+            </div>
+        </div>
+    </div>
+

@@ -79,7 +79,7 @@
     }
   }
   &--opteum{
-    min-height: 760px;
+    min-height: 550px;
 padding-bottom: 3rem;
     margin-top: 2.5rem;
   }
@@ -120,7 +120,7 @@ padding-bottom: 3rem;
   }
   &__btn{
     flex: 0 0 auto;
-    min-width: 242px;
+    min-width: 170px;
     margin: 3rem auto 0 auto;
     @include mq(tablet,min){
       margin-left: 0;

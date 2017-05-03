@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Opteum</title>
+    <link rel="stylesheet" href="/src_design/styles/common.css" media="screen">
+    <link rel="stylesheet" href="/src_design/styles/opteum.css" media="screen">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <script src="/src_design/js/vendors/jquery-3.1.1.min.js"></script>
+    <script src="/src_design/js/vendors/jquery.validate.min.js"></script>
+    <script src="/src_design/js/main.js"></script>
+</head>
+<body>
+<script>
+    var ua = navigator.userAgent;
+    var isAndroidNative = ((ua.indexOf('Mozilla/5.0') > -1) && (ua.indexOf('Android') > -1) && !(ua.indexOf('Chrome') > -1) && (ua.indexOf('Version') > -1));
+    //document.write('' + 'Browser name = ' + objbrowserName + '<br>' + 'Full version = ' + objfullVersion + '<br>' + 'Major version = ' + objBrMajorVersion + '<br>' + 'navigator.appName = ' + navigator.appName + '<br>' + 'ua = ' + navigator.userAgent + '<br>')
+    if(isAndroidNative || navigator.userAgent.match('MSIE 8.0') || navigator.userAgent.match('MSIE 9.0')) {
+        window.location = 'oldbrowser/index.html';
+    }
+</script>
+<div class="b-page">
+    <div class="preloader">
+        <svg class="preloader__svg" viewBox="0 0 50 50">
+            <circle class="path" cx="25" cy="25" r="20" fill="none" stroke-width="5"></circle>
+        </svg>
+    </div>
+    <div class="b-page__section b-page__section--header">
+    <div class="section header">
+        <a href="/" class="logo-company">Opteum</a>
+            <ul class="header__menu nav">
+                <script>
+                    $(document).ready(function () {
+                        $('.nav__link, .arrow-down').DropDown();
+                    });
+                </script>
+                <li class="nav__item">
+                    <div class="dropdown-menu">
+                        <a href="#" class="nav__link">Продукты</a><div class="arrow-down"></div>
+                        <ul class="dropdown-menu__list dropdown-list">
+                            <!--
+                            <li class="dropdown-list__item">
+                                <a href="#" class="item-container">
+                                        <p class="item-container__link dropdown-list__title"><div class="icon-item">Т</div>Таксиграция</p>
+                                        <p class="item-container__text">Финансы и зарплата</p>
+                                </a>
+                            </li> 
+                            -->
+                            <li class="dropdown-list__item">
+                                <a href="/indicators" class="item-container">
+                                    <p class="item-container__link dropdown-list__title"> <div class="icon-item">Т</div>Таксиграция</p>
+                                    <p class="item-container__text">Мотивация</p>
+                                 </a>
+                            </li>
+                            <li class="dropdown-list__item">
+                                <a href="/about" class="item-container">
+                                    <p class="item-container__link dropdown-list__title"> <div class="icon-item icon-item--opteum">Т</div>Оптеум</p>
+                                    <p class="item-container__text">Для классических таксопарков и диспетчерских</p>
+                                    </a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="nav__item"><a href="/price" class="nav__link">Цены</a></li>
+                <li class="nav__item"><a href="help.opteum.ru" class="nav__link">Поддержка</a></li>
+                <li class="nav__item"><a href="taxigrace.com/blog" class="nav__link">Кейсы</a></li>
+            </ul>
+            <a href="#form" data-modal=".modal--request" class="nav-anchor btn btn--primary  btn--nav header__btn" ></a>
+        <script>
+            $(document).ready(function() {
+                $('.btn--action').on('click',function () {
+                    if ($('#form').length < 1){
+                        console.log('passed');
+                        $(this).Modal();
+                    }else{
+                     return false
+                    }
+                })
+            })
+        </script>
+            <a href="javascript:void(0)" class="header__burger menu-button-js">
+                <span class="burger-icon"></span>
+            </a>
+    </div>
+    </div>
+    <div class="b-page__section b-page__section--jumbotron b-page__section--jumbotron-opteum">
+        <div class="jumbotron jumbotron--opteum">
+            <div class="grid">
+                <div class="grid__row grid__row--md">
+                    <div class="grid__item">
+                        <div class="jumbotron__text-group">
+                            <img class="jumbotron__icon" src="/src_design/img/opteum-icon.svg" alt="">
+                            <p class="title-text jumbotron__title">Оптеум</p>
+                            <p class="title-text jumbotron__text">Сделает работу Ваших диспетчеров и водителей максимально эффективной и даст инструменты для работы со спутниковым мониторингом, колл-центром и СМС.</p>
+                            <a href="#form"  class="nav-anchor btn btn-lg jumbotron__btn">Попробовать бесплатно</a>
+                            <div class="jumbotron__figure">
+                                <img src="/src_design/img/rocket.svg" class="jumbotron__icon">
+                                <p class="title-text jumbotron__text">Быстрое внедрение</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="grid__item">
+                        <div class="img-jumbotron img-jumbotron--opteum">
+                            <div class="img-jumbotron__img">
+                                <img src="/src_design/img/jumbotron-opteum.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="b-page__section">
+        <div class="section grid">
+            <div class="grid__row grid__row--nowrap grid__row--md grid__row--line">
+                <div class="grid__item">
+                    <div class="b-article b-article--main">
+                        <p class="section-title section-title--md-left">Возможности</p>
+                        <p class="b-article__text b-article__text--main">Мы знаем проблемы, с которыми сталкиваются таксопарки и нашли для них удобные решения</p>
+                    </div>
+                </div>
+                <div class="grid__item">
+                    <div class="b-article">
+                        <div class="b-article__img">
+                            <img class="article-img" src="/src_design/img/app-driver.svg" alt="">
+                        </div>
+                        <p class="b-article__title article-title">Приложение для водителей(таксометр)</p>
+                        <p class="b-article__text">Поддержка Android, история заказов, расчет по таксометру, навигатор.</p>
+                    </div>
+                    <div class="b-article">
+                        <div class="b-article__img">
+                            <img class="article-img" src="/src_design/img/rights.svg" alt="">
+                        </div>
+                        <p class="b-article__title article-title">Настройка прав и ограниченние доступа</p>
+                        <p class="b-article__text">Возможность создавать группы пользователей и назначать права.</p>
+                    </div>
+                    <div class="b-article">
+                        <div class="b-article__img">
+                            <img class="article-img" src="/src_design/img/reports.svg" alt="">
+                        </div>
+                        <p class="b-article__title article-title">Учет и отчетность</p>
+                        <p class="b-article__text">Сохранение всей истории по заказам, формирование отчетности по водителям, контрагентам.</p>
+                    </div>
+                    <div class="b-article">
+                        <div class="b-article__img">
+                            <img class="article-img" src="/src_design/img/work-space.svg" alt="">
+                        </div>
+                        <p class="b-article__title article-title">Рабочее место диспетчера</p>
+                        <p class="b-article__text">Работа с картой, быстрый ввод адресов, архив заказов, черный список.</p>
+                    </div>
+                </div>
+                <div class="grid__item">
+                    <div class="b-article">
+                        <div class="b-article__img">
+                            <img class="article-img" src="/src_design/img/auto-allocation.svg" alt="">
+                        </div>
+                        <p class="b-article__title article-title">Автоматический расчет стоимости</p>
+                        <p class="b-article__text">Возможность расчета стоимости по координатам. Загрузка адресов города.</p>
+                    </div>
+                    <div class="b-article">
+                        <div class="b-article__img">
+                            <img class="article-img" src="/src_design/img/gps-mon.svg" alt="">
+                        </div>
+                        <p class="b-article__title article-title">GPS-мониторинг транспорта</p>
+                        <p class="b-article__text">Контроль местоположения экипажей такси, сохранение трека по заказу.</p>
+                    </div>
+                    <div class="b-article">
+                        <div class="b-article__img">
+                            <img class="article-img" src="/src_design/img/fin-calc.svg" alt="">
+                        </div>
+                        <p class="b-article__title article-title">Финансовые расчеты</p>
+                        <p class="b-article__text">Автоматические расчеты с водителем, диспетчером, контрагентом. Работа с лицевым счетом.</p>
+                    </div>
+                    <div class="b-article">
+                        <div class="b-article__img">
+                            <img class="article-img" src="/src_design/img/taxometer.svg" alt="">
+                        </div>
+                        <p class="b-article__title article-title">Персональный таксометр</p>
+                        <p class="b-article__text">Создание собственных тарифов, учет ожидания, подачи, минималка.</p>
+                    </div>
+                </div>
+                <div class="grid__item">
+                    <div class="b-article">
+                        <div class="b-article__img">
+                            <img class="article-img" src="/src_design/img/auto-allocation.svg" alt="">
+                        </div>
+                        <p class="b-article__title article-title">Автоматическое распределение заказа</p>
+                        <p class="b-article__text">Распределение по ближайшему водителю и по парковочным зонам.</p>
+                    </div>
+                    <div class="b-article">
+                        <div class="b-article__img">
+                            <img class="article-img" src="/src_design/img/client-base.svg" alt="">
+                        </div>
+                        <p class="b-article__title article-title">Клиентская база и черный список</p>
+                        <p class="b-article__text">Ведение истории по клиенту, отказы и черный список по клиентам такси.</p>
+                    </div>
+                    <div class="b-article">
+                        <div class="b-article__img">
+                            <img class="article-img" src="/src_design/img/call-center.svg" alt="">
+                        </div>
+                        <p class="b-article__title article-title">Сall-центр</p>
+                        <p class="b-article__text">Привязка СИП-номера, входящие исходящие звонки, автоматические отзвоны ожидание, голосовое меню.</p>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </div>
+    <div class="b-page__section">
+        <div class="section section--news news">
+            <div class="grid">
+                <div class="grid__row grid__row--centered grid__row--md">
+                    <div class="grid__item"><p class="section-title section-title--left">Наши новости</p></div>
+                    <div class="grid__item grid__item--mb-hide">
+                        <ul class="nav nav--news nav--right">
+                            <li class="nav__item">
+                                <a href="blog.html" class="nav__link">Блог</a>
+                            </li>
+                            <li class="nav__item"><a href="#" class="nav__link">Наши новости</a></li>
+                            <li class="nav__item"><a href="#" class="nav__link">Кейсы</a></li>
+                            <li class="nav__item"><a href="#" class="nav__link">СМИ о нас</a></li>
+                        </ul></div>
+                </div>
+            </div>
+            <div class="grid">
+                <div class="grid__row grid__row--md">
+                    <div class="grid__item">
+                        <a href="#" class="b-article b-article--news">
+                            <div class="b-article__img">
+                                <img class="article-img" src="/src_design/img/news-telegram.jpg" alt="">
+                                <div class="b-article_hidden">
+                                    <button class="btn btn--more">Читать статью</button>
+                                </div>
+                            </div>
+                            <div class="b-article__wrap">
+                                <p class="b-article__title article-title">Телеграм-бот для поддержки водителей</p>
+                                <p class="b-article__text">20 ФЕВ, 2017</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="grid__item">
+                        <a href="#" class="b-article b-article--news">
+                            <div class="b-article__img">
+                                <img class="article-img" src="/src_design/img/news-func.svg" alt="">
+                                <div class="b-article_hidden">
+                                    <button class="btn btn--more">Читать статью</button>
+                                </div>
+                            </div>
+                            <div class="b-article__wrap">
+                                <p class="b-article__title article-title">Мы добавили в приложение новые функции</p>
+                                <p class="b-article__text">4 ФЕВ, 2017</p>
+                            </div>
+                        </a>
+    
+                    </div>
+                    <div class="grid__item">
+                        <a href="#" class="b-article b-article--news">
+                            <div class="b-article__img">
+                                <img class="article-img" src="/src_design/img/news-instr.jpg" alt="">
+                                <div class="b-article_hidden">
+                                    <button class="btn btn--more">Читать статью</button>
+                                </div>
+                            </div>
+                            <div class="b-article__wrap">
+                                <p class="b-article__title article-title">Как подключиться к Gettaxi? Инструкция.</p>
+                                <p class="b-article__text">10 янв, 2017</p>
+                            </div>
+                        </a>
+    
+                    </div>
+                    <div class="grid__item">
+                        <a href="#" class="b-article b-article--news">
+                            <div class="b-article__img">
+                                <img class="article-img" src="/src_design/img/news-modulebank.jpg" alt="">
+                                <div class="b-article_hidden">
+                                    <button class="btn btn--more">Читать статью</button>
+                                </div>
+                            </div>
+                            <div class="b-article__wrap">
+                                <p class="b-article__title article-title">Автоматическая выгрузка платежек в клиент-банк
+                                    и 1С</p>
+                                <p class="b-article__text">20 ФЕВ, 2017</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="b-page__section b-page__section--blue">
+        <form id="form" class="form form--request">
+            <p class="form__title section-title">Оставить заявку</p>
+            <p class="base-text base-text--soft base-text--center base-text--sm-bigger">Наши менеджеры свяжутся с вами</p>
+            <div class="form__wrap">
+                <div class="field">
+                    <label class="base-text base-text--sm base-text--upper base-text--soft">Имя</label>
+                    <input name="name" type="text" class="field__input input">
+                    <i class="input__icon"></i>
+                </div>
+                <div class="field">
+                    <label class="base-text base-text--sm base-text--upper base-text--soft">EMAIL</label>
+                    <input name="email" type="text" class="field__input input">
+                    <i class="input__icon"></i>
+                </div>
+                <div class="field">
+                    <label class="base-text base-text--sm base-text--upper base-text--soft">Телефон</label>
+                    <input name="number" type="text" class="field__input input" placeholder="+7(999)888-77-66">
+                    <i class="input__icon"></i>
+                </div>
+                <div class="field field--radios">
+                    <p class="base-text base-text--sm base-text--upper base-text--soft">Деятельность</p>
+                    <div class="field__group">
+                        <input name="type" class="checkbox" id="taxopark" type="radio" checked value="org">
+                        <label class="label-box" for="taxopark">Таксопарк</label>
+                        <input name="type" class="checkbox" id="driver" type="radio" value="driver">
+                        <label class="label-box" for="driver">Водитель</label>
+                    </div>
+                </div>
+                <button class="btn form__btn">Оставить заявку</button>
+            </div>
+        </form>
+        <div class="grid md-block">
+            <div class="grid__row grid__row--md ">
+                <div class="grid__item">
+                    <img class="md-block__img" src="/src_design/img/taxiritm.png" alt="">
+                </div>
+                <div class="grid__item">
+                    <img class="md-block__img" src="/src_design/img/956.png" alt="">
+                </div>
+                <div class="grid__item">
+                    <img class="md-block__img" src="/src_design/img/788.svg" alt="">
+                </div>
+                <div class="grid__item">
+                    <img class="md-block__img" src="/src_design/img/kamaz.png" alt="">
+                </div>
+            </div>
+            <p class="md-block__text">
+                Более 46 клиентов ежедневно пользуются приложением Таксиграция, попробуйте и Вы. Оцените
+                7-дневную пробную версию Таксиграции совершенно бесплатно.
+            </p>
+        </div>
+    </div>
+    <div class="b-page__section">
+        <div class="footer">
+            <div class="grid">
+                <div class="grid__row grid__row--nowrap grid__row--md grid__row--line">
+                    <div class="grid__item">
+                        <div class="b-article b-article--footer">
+                            <a href="/" class="logo-company">Opteum</a>
+                            <ul>
+                                <li class="b-article__item b-article__item--contacts"><a class="b-article__text" href="mailto:sales@opteum.ru">sales@opteum.ru</a></li>
+                                <li class="b-article__item b-article__item--contacts"><a class="b-article__text" href="tel:+74986195744">8 (498) 619- 57-44</a></li>
+                                <li class="b-article__item b-article__item--contacts"><p class="b-article__text">с 9:00 до 18:00 по Москве</p></li>
+                                <li class="b-article__item b-article__item--separate b-article__item--contacts"><a class="b-article__text b-article__text--facebook" href="https://www.facebook.com/opteumtaxi/">f</a></li>
+    
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="grid__item">
+                        <div class="grid footer-items">
+                            <div class="grid__row grid__row--lined grid__row--md grid__row--line">
+                                <div class="grid__item">
+                                    <div class="b-article b-article--footer">
+                                        <p class="b-article__title">Продукты</p>
+                                        <ul>
+                                            <li class="b-article__item"><a class="b-article__text" href="/">Таксиграция</a></li>
+                                            <li class="b-article__item"><a class="b-article__text" href="/about">Оптеум: Управление таксопарком</a></li>
+                                            <li class="b-article__item b-article__item--separate"><a class="b-article__text" href="#">Демо-версия</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="grid__item">
+                                    <div class="b-article b-article--footer">
+                                        <p class="b-article__title">О компании</p>
+                                        <ul>
+                                            <li class="b-article__item"><a class="b-article__text" href="/team">Команда</a></li>
+                                            <li class="b-article__item"><a class="b-article__text" href="/contact">Контакты</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="grid__item">
+                                    <div class="b-article b-article--footer">
+                                        <p class="b-article__title">Поддержка</p>
+                                        <ul>
+                                            <li class="b-article__item"><a class="b-article__text" href="mailto:info@opteum.ru">Обратная связь</a></li>
+                                            <li class="b-article__item"><a class="b-article__text" href="help.opteum.ru">Сервис поддержки</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="grid__item">
+                                    <div class="b-article b-article--footer">
+                                        <p class="b-article__title">ЦЕНЫ</p>
+                                        <ul>
+                                            <li class="b-article__item"><a class="b-article__text" href="/price">Тарифы и цены</a></li>
+                                            <li class="b-article__item"><a class="b-article__text" href="/price#type-payment">Способы оплаты</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--<div class="b-page__section b-page__section&#45;&#45;underground">-->
+        <!--<div class="section">-->
+            <!--<p class="b-article__text">© Opteum <? echo date(Y); ?></p>-->
+        <!--</div>-->
+    <!--</div>-->
+    <div class="modal modal--status modal-success">
+        <div class="modal__close">X</div>
+        <div class="modal__body">
+            <p class="modal__title b-article__title article-title"></p>
+            <div class="modal__content">
+                <p class="article-title modal__text">Ваш запрос принят. Вам перезвонит специалист в течение рабочего дня (с 09 по 18 по МСК).</p>
+                <button class="btn form__btn modal__close">Ок</button>
+            </div>
+        </div>
+    </div>
+    <div class="modal modal--status modal-failed">
+        <div class="modal__close "><img src="/src_design/img/cross-out.svg"class="cross-out"></div>
+        <div class="modal__body">
+            <p class="modal__title article-title article-title--md "></p>
+            <div class="modal__content">
+                <p class="article-title modal__text">К сожалению, произошла ошибка :( Попробуйте еще раз немного позже</p>
+            </div>
+        </div>
+    </div>
+</div>
+<!--roistat-->
+<script>
+    (function(w, d, s, h, id) {
+        w.roistatProjectId = id; w.roistatHost = h;
+        var p = d.location.protocol == "https:" ? "https://" : "http://";
+        var u = /^.*roistat_visit=[^;]+(.*)?$/.test(d.cookie) ? "/dist/module.js" : "/api/site/1.0/"+id+"/init";
+        var js = d.createElement(s); js.async = 1; js.src = p+h+u; var js2 = d.getElementsByTagName(s)[0]; js2.parentNode.insertBefore(js, js2);
+    })(window, document, 'script', 'cloud.roistat.com', '0a3c8d02fa16b4a58070b57d55318a13');
+</script>
+<!-- Yandex.Metrika counter -->
+<script type="text/javascript">
+    (function (d, w, c) {
+        (w[c] = w[c] || []).push(function() {
+            try {
+                w.yaCounter21150820 = new Ya.Metrika({
+                    id:21150820,
+                    clickmap:true,
+                    trackLinks:true,
+                    accurateTrackBounce:true,
+                    webvisor:true
+                });
+            } catch(e) { }
+        });
+
+        var n = d.getElementsByTagName("script")[0],
+                s = d.createElement("script"),
+                f = function () { n.parentNode.insertBefore(s, n); };
+        s.type = "text/javascript";
+        s.async = true;
+        s.src = "https://mc.yandex.ru/metrika/watch.js";
+
+        if (w.opera == "[object Opera]") {
+            d.addEventListener("DOMContentLoaded", f, false);
+        } else { f(); }
+    })(document, window, "yandex_metrika_callbacks");
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/21150820" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
+
+<!--Google Analytics-->
+<script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+                (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-84546132-1', 'auto');
+    ga('send', 'pageview');
+
+</script>
+</body>
+</html>

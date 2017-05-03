@@ -20,20 +20,20 @@ var gulp = require('gulp'),
 
 var path = {
     dist : {
-        html : 'dist/',
-        js : 'dist/js',
-        vendorJs : 'dist/js/vendors/',
-        style: 'dist/styles/',
-        img: 'dist/img/',
-        fonts: 'dist/fonts/'
+        html : 'dist/src_design/',
+        js : 'dist/src_design/js',
+        vendorJs : 'dist/src_design/js/vendors/',
+        style: 'dist/src_design/styles/',
+        img: 'dist/src_design/img/',
+        fonts: 'dist/src_design/fonts/'
     },
     build : {
-        html : 'build/',
-        js : 'build/js',
-        vendorJs : 'build/js/vendors/',
-        style: 'build/styles/',
-        img: 'build/img/',
-        fonts: 'build/fonts/'
+        html : 'build/src_design/',
+        js : 'build/src_design/js',
+        vendorJs : 'build/src_design/js/vendors/',
+        style: 'build/src_design/styles/',
+        img: 'build/src_design/img/',
+        fonts: 'build/src_design/fonts/'
     },
     src_design : {
         js : 'src_design/js',
@@ -46,7 +46,7 @@ var path = {
         html: 'src/*.html',
         js: 'src/js/main.js',
         vendorJs : 'src/js/vendors/**/*.*',
-        style: 'src/styles/pages/*.*',
+        style: 'src/styles/pages/**/*.*',
         img: 'src/img/**/*.*',
         fonts: 'src/fonts/**/*.*'
     },
@@ -62,7 +62,7 @@ var path = {
 
 var config = {
     server: {
-        baseDir: "./build"
+        baseDir: "./build/src_design"
     },
     host: 'localhost',
     port: 9090,

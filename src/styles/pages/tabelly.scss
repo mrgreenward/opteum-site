@@ -1,0 +1,376 @@
+@import "../helpers/_variables";
+@import "../helpers/_mixins";
+
+@import "../components/_jumbotron";
+@import "../components/_short-block";
+
+.b-page{
+  font-family: RobotoRegular, sans-serif;
+}
+.jumbotron__title,.jumbotron__text,.base-text,.section-title{
+  font-family: RobotoRegular, sans-serif;
+}
+.logo-company{
+  color:$white;
+}
+.header__menu{
+  background: #b274f7;
+  border: 1px solid rgba(143, 143, 143, 0.2);
+  @include mq (tablet,min){
+    background: transparent;
+    border:none;
+  }
+}
+.burger-icon{
+  background-color: $white;
+  &:before{
+    background-color: $white;
+  }
+  &:after{
+    background-color: $white;
+  }
+}
+.nav__link{
+  font-size: $md-h4;
+  text-transform: none;
+  font-family: RobotoRegular,sans-serif;
+  color: $white;
+}
+.title-text {
+  color: $white;
+}
+.b-page__section{
+  border-bottom: none;
+}
+.b-page__section--theme-tabelly{
+  background: $section-theme-tabelly;
+  margin: 0;
+}
+.b-page__wrapper{
+  background: url("/img/tabelly/bg-circles.svg") -25px 100% no-repeat no-repeat , linear-gradient(128deg, #818aff, #d464f1, #ff80b5);
+  background-size: 100%;
+  padding: 3rem 0 0 0;
+  @include mq(tablet,min){
+    background-size: initial;
+    background-position: 50% 150%;
+  }
+  @include mq(desktop,min){
+    background: url("/img/tabelly/bg-circles.svg") 100% 0 no-repeat no-repeat , linear-gradient(128deg, #818aff, #d464f1, #ff80b5);
+    padding: 3rem 0 10rem 0;
+  }
+}
+.b-page__section--jumbotron{
+  background: transparent;
+  border-bottom: none;
+  padding-bottom: 0;
+  @include mq(desktop,min){
+    margin-right: 0;
+  }
+}
+.btn{
+  border-radius: 4px;
+  border: 2px solid $white;
+  color: $white;
+  background: transparent;
+  &:hover{
+    background: transparent;
+  }
+}
+.jumbotron{
+  position: static;
+  max-width: 1188px;
+  margin: 0 auto;
+  padding-right: 0;
+}
+.jumbotron__row{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  @include mq (phablet,min){
+    flex-direction: row;
+  }
+}
+.jumbotron__instruments{
+  margin-bottom: 1rem;
+  width: 75%;
+  @include mq (desktop,min){
+    width: 100%;
+  }
+}
+.jumbotron__btn{
+  margin: 1.5rem auto;
+  font-size: $lg-h4;
+  padding: 0.6em 1.4em;
+  @include mq (desktop,min){
+    margin-left: 0;
+    margin-right: 0;
+  }
+  &:after{
+    display: none;
+  }
+}
+.title-text{
+  @include mq (desktop,min){
+    text-align: left;
+  }
+}
+.jumbotron__text-group{
+  max-width: 620px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  @include mq (desktop,min){
+    max-width: 405px;
+    margin-left: -6rem;
+    align-items: flex-start;
+  }
+}
+.img-jumbotron--opteum .img-jumbotron__img{
+  width: inherit;
+  margin-right: auto;
+  margin-top: 4rem;
+  @include mq (desktop,min){
+    width: 803px;
+    margin-top: auto;
+    margin-right: -1.6rem;
+  }
+}
+.img-jumbotron__img img{
+  max-width: 803px;
+  max-height: 558px;
+  border-radius: 10px;
+  width: 100%;
+  height: 100%;
+  right: -10px;
+  top:195px;
+  margin-bottom: -2.5rem;
+}
+.section-logo{
+  width: 252px;
+}
+.section-img{
+  position: absolute;
+  left: -192px;
+  top: 26%;
+  width: 576px;
+  height: 581px;
+  @include mq (desktop-wide,min){
+    left: -100px;
+  }
+}
+.b-page__section--big-indent{
+  padding: 8rem 0;
+}
+.b-page__section--pluses{
+  position: relative;
+}
+.section-title{
+  font-family: RobotoLight,sans-serif;
+  color: $tabelly-title-color;
+  @include mq (desktop,min){
+    font-size: $md-h1;
+  }
+}
+.b-article__title{
+  font-family: RobotoMedium,sans-serif;
+}
+.b-page__section--advantages{
+  background: url("/img/tabelly/advantages-circles.svg")$tabelly-section-fon 50% 0 no-repeat no-repeat;
+}
+.b-article{
+  @include mq(tablet,min){
+    margin-top: 7rem;
+  }
+}
+.base-text {
+  &--tabelly-theme {
+    background: $gradient-tabelly;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+}
+.short-block > p{
+  margin: 0;
+  text-align: center;
+}
+.diamond{
+  margin-bottom: 3rem;
+}
+.advantages{
+  max-width: 968px;
+  & .short-block{
+    margin: 0 auto;
+  }
+  &__row{
+    margin-bottom: 5rem;
+    &--sm{
+      max-width: 500px;
+      margin: 0 auto;
+    }
+  }
+}
+.logo-company{
+  font-family: ProximaNova-Bold;
+}
+.md-block--title{
+  font-family: RobotoLight,sans-serif;
+  font-weight: 100;
+  font-size: $sm-h1;
+  color: $tabelly-title-color;
+  @include mq (tablet,min){
+      font-size: $md-h2;
+    }
+  @include mq (tablet,min){
+    font-size: $sm-h1;
+  }
+}
+.footer-items__text{
+  font-size:$sm-h5;
+  @include mq (desktop,min){
+    font-size: $md-h4;
+  }
+}
+.b-article--footer {
+  width: 100%;
+  max-width: 411px;
+  align-items: flex-start;
+  text-align: left;
+  @include mq (tablet,min){
+
+  }
+  @include mq (desktop,min){
+    max-width: 368px;
+  }
+}
+.footer-items {
+  max-width: 200px;
+  margin-left: -1.2rem;
+  @include mq (tablet,min){
+    margin-top: 10rem;
+    margin-left: auto;
+  }
+  @include mq (desktop,min){
+    max-width: initial;
+    margin-left: 0;
+  }
+}
+.footer{
+  padding: 0 1.2rem;
+  &__row{
+    align-items: flex-start;
+    @include mq (tablet,min){
+      align-items: center;
+    }
+  }
+}
+.section-title--white{
+  color: $white;
+}
+.section__wrapper{
+  max-width: 575px;
+  margin: 0 auto;
+}
+.form{
+  background: transparent;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  &__wrap{
+    margin: 2rem 0;
+    max-width: 100%;
+  }
+}
+.field{
+  margin-bottom: 0;
+  &__input{
+    border-radius: 5px;
+    padding: 0 2rem;
+  }
+}
+.input--error + .input__icon {
+  bottom: 14px;
+  right: 8px;
+}
+.input--success + .input__icon {
+  bottom: 8px;
+  right: 8px;
+}
+.field__group{
+  border-radius: 5px;
+  background: $white;
+}
+.checkbox:checked + .label-box:before{
+  @include mq (tablet,min){
+    display: block;
+  }
+}
+.label-box {
+  cursor: pointer;
+  width: 100%;
+  font-size: $md-h5;
+  position: relative;
+  background: transparent;
+  padding: 1.4rem 1rem;
+  text-align: center;
+  border-right: 1px solid $gray--lightest;
+  @include mq (tablet,min){
+    font-size: $md-h4;
+    padding: 1.4rem 2rem;
+  }
+&--non-border{
+  border:none;
+}
+  &:before{
+    display: none;
+    @include mq (tablet,min) {
+      position: absolute;
+      display: none;
+      left: 12px;
+      background: url("/img/tabelly/lead-form-check.svg") no-repeat no-repeat;
+      content: '';
+      border: none;
+      width: 16px;
+      height: 9px;
+      padding: 0;
+      border-radius: 0;
+      top: 19px;
+    }
+  }
+  &:after{
+    content: '';
+    border-radius: 0;
+    padding: 3px;
+    width: 80%;
+    height: 60%;
+    background: transparent;
+    border: 2px solid #ff65a5;
+    top: 4px;
+    left: 4px;
+    @include mq (tablet,min){
+      width: 86%;
+    }
+  }
+}
+.label-box:hover:before {
+   border: none;
+}
+.label-box__text{
+  &--less:before{
+    display: inline-block;
+    color: $black;
+    content:"<";
+    @include mq (tablet,min){
+      content:"менее";
+    }
+  }
+  &--more:before{
+    display: inline-block;
+    color: $black;
+    content:">";
+    @include mq (tablet,min){
+      content:"более";
+    }
+  }
+}

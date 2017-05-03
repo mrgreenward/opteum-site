@@ -1,3 +1,8 @@
+$(document).ready(function () {
+    setTimeout(function () {
+        $('.preloader').fadeOut();
+    },1000);
+});
 //= utils/checkbrowsers.js
 //= components/modal.js
 //= components/burger.js

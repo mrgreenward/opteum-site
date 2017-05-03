@@ -60,11 +60,14 @@
     }
   }
   &--more{
+    display: flex;
+    align-items:center;
+    justify-content: center;
     color: $white;
     text-transform: uppercase;
     text-align: center;
     font-size: $lg-h3;
-    width: 100%;
+    width: auto;
     height: 100%;
     margin: 0;
     border-radius: 0;

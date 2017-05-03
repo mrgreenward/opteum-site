@@ -16,6 +16,16 @@
       margin: auto;
       padding-bottom: 0;
     }
+    &--404{
+      max-width: 216px;
+      & > img {
+        width: 100%;
+      }
+      @include mq(desktop,min){
+        max-width: 276px;
+        max-height: 297px;
+      }
+    }
   }
 }
 .jumbotron__uber-text{
@@ -36,6 +46,14 @@
   overflow: hidden;
   word-break: break-word;
   word-wrap: break-word;
+  &--404{
+    max-width: 1178px;
+    margin: 0 auto;
+    display: block;
+    @include mq (desktop,min){
+      margin: 8rem auto 8rem auto;
+    }
+  }
   @include mq (tablet,min){
     padding: 0 1.2rem;
   }
@@ -45,6 +63,7 @@
     font:$sm-h2 GothamProLight,sans-serif;
     color: gray;
     line-height: 1.5;
+    word-break: break-word;
     &--left{
       text-align: left;
     }
@@ -60,6 +79,9 @@
         display: block;
       }
     }
+  }
+  &__text-indent{
+    margin: 2em 0 1em 0;
   }
   &__text--uber{
     @include mq (phone-wide, min){
@@ -107,6 +129,13 @@
     @include mq(desktop,min){
       font-size: $lg-h3;
     }
+    &--404{
+      min-width: 200px;
+      margin: 1.5rem auto;
+      @include mq (desktop,min){
+        margin-left: 0;
+      }
+    }
   }
   &__wrap{
     width: 100%;
@@ -137,6 +166,32 @@
     max-width: 669px;
     width: 75%;
     margin: 4.5rem 0 5.5rem 0;
+    &--contacts{
+      width: 75%;
+      text-align: center;
+      margin: 0 auto;
+
+      @include mq (tablet,min){
+        max-width: 367px;
+        text-align: left;
+        margin-left: 0;
+        word-break: word-break;
+      }
+    }
+    &--404{
+      width: 100%;
+      text-align: center;
+      margin: 0 auto;
+      @include mq (tablet,min){
+        text-align: left;
+        max-width: 482px;
+      }
+      @include mq (desktop,min){
+        text-align: left;
+        max-width: 482px;
+        margin-left: 0;
+      }
+    }
     @include mq (desktop,min){
       width: 100%;
     }

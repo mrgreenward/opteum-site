@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="36" height="32" viewBox="0 0 36 32">
+    <defs>
+        <path id="a" d="M21.708.042L0 13.694l13.517 7.673 8.683-5.461 1.67-2.73h2.672l8.683-5.46z"/>
+        <path id="c" d="M21.708.006L0 13.657l13.517 7.673L35.225 7.68z"/>
+        <path id="e" d="M21.708.038L0 13.689l13.517 7.673L35.225 7.711z"/>
+        <path id="g" d="M21.708.002l-8.683 5.46v2.73H8.683L0 13.652l13.517 7.674L35.225 7.674z"/>
+        <path id="i" d="M4.356.034L.015 2.764l13.516 7.673 2.171.333 2.171-3.063z"/>
+        <path id="k" d="M-.33 11.113h18.547V-.309H-.329z"/>
+        <path id="l" d="M.047 2.742v10.003l4.342-2.73V.012z"/>
+        <path id="n" d="M-.297 13.089h5.03V-.331h-5.03z"/>
+    </defs>
+    <g fill="none" fill-rule="evenodd">
+        <g transform="translate(0 9.963)">
+            <mask id="b" fill="#fff">
+                <use xlink:href="#a"/>
+            </mask>
+            <path fill="#E6CBFB" d="M-.344 21.71h35.913V-.3H-.344z" mask="url(#b)"/>
+        </g>
+        <g transform="translate(0 6.665)">
+            <mask id="d" fill="#fff">
+                <use xlink:href="#c"/>
+            </mask>
+            <path fill="#FAEEF7" d="M-.344 21.674h35.913V-.338H-.344z" mask="url(#d)"/>
+        </g>
+        <g transform="translate(0 3.298)">
+            <mask id="f" fill="#fff">
+                <use xlink:href="#e"/>
+            </mask>
+            <path fill="#FEFBFD" d="M-.344 21.706h35.913V-.306H-.344z" mask="url(#f)"/>
+        </g>
+        <g>
+            <mask id="h" fill="#fff">
+                <use xlink:href="#g"/>
+            </mask>
+            <path fill="#FFF" d="M-.344 21.67h35.913V-.343H-.344z" mask="url(#h)"/>
+        </g>
+        <g transform="translate(8.669 5.428)">
+            <mask id="j" fill="#fff">
+                <use xlink:href="#i"/>
+            </mask>
+            <g mask="url(#j)">
+                <use fill="#E6E2E0" xlink:href="#k"/>
+                <use fill="#E079BF" style="mix-blend-mode:overlay" xlink:href="#k"/>
+            </g>
+        </g>
+        <g transform="translate(22.153 13.123)">
+            <mask id="m" fill="#fff">
+                <use xlink:href="#l"/>
+            </mask>
+            <g mask="url(#m)">
+                <use fill="#CCC4C1" xlink:href="#n"/>
+                <use fill="#CF74C8" style="mix-blend-mode:overlay" xlink:href="#n"/>
+            </g>
+        </g>
+    </g>
+</svg>

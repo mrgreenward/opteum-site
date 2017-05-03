@@ -24,6 +24,9 @@ b{
   font-weight: bold;
   color: $black;
 }
+a.brn{
+  @extend button;
+}
 .text--show{
   display: block;
 }
@@ -62,6 +65,53 @@ b{
     }
   }
  .base-text{
+   &--title-biggest{
+     font: $md-h1 GothamProLight;
+     @include mq (tablet,min){
+       font-size: $lg-h1;
+     }
+     @include mq (desktop,min){
+       font-size: $lg-h0;
+     }
+   }
+   &--tabelly-theme{
+     background: $gradient-tabelly;
+     -webkit-background-clip: text;
+     -webkit-text-fill-color: transparent;
+   }
+   &--white{
+     color: $white;
+   }
+   &--title-big{
+     font: $sm-h1 GothamProLight;
+     @include mq (tablet,min){
+       font-size: $md-h1;
+     }
+     @include mq (desktop,min){
+       font-size: $lg-h1;
+     }
+   }
+   &--title-md{
+     font: $sm-h2;
+     @include mq (tablet,min){
+       font-size: $md-h2;
+     }
+     @include mq (desktop,min){
+       font-size: $lg-h2;
+     }
+   }
+   &--med{
+      font: $sm-h3 GothamProLight;
+      @include mq (tablet,min){
+        font-size: $md-h3;
+      }
+      @include mq (desktop,min){
+        font-size: $lg-h3;
+      }
+    }
+   &--font-med{
+     font-family: GothamProRegular;
+   }
    &--sm{
      font-size: $sm-sm;
    }
@@ -78,6 +128,9 @@ b{
    line-height: 1.5;
    &--soft{
      color: $color-article-text;
+   }
+   &--darker{
+     color:$gray--darker;
    }
   &--big{
     font-size: $md-h1;

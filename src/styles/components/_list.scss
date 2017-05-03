@@ -1,0 +1,8 @@
+.list{
+  &__item{
+    margin-bottom: 1rem;
+  }
+  &--num{
+    list-style-type: decimal;
+  }
+}

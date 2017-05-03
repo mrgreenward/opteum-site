@@ -1,0 +1,29 @@
+<div class="b-page__section b-page__section--header">
+<div class="section header">
+    <a href="/" class="logo-company">Tabelly</a>
+        <ul class="header__menu nav">
+            <script>
+                $(document).ready(function () {
+                    $('.nav__link, .arrow-down').DropDown();
+                });
+            </script>
+            <li class="nav__item"><a href="#capabilities" class="nav-anchor nav__link">Возможности</a></li>
+            <li class="nav__item"><a href="#form" class="nav-anchor nav__link">Демо-версия</a></li>
+        </ul>
+    <script>
+        $(document).ready(function() {
+            $('.btn--action').on('click',function () {
+                if ($('#form').length < 1){
+                    console.log('passed');
+                    $(this).Modal();
+                }else{
+                 return false
+                }
+            })
+        })
+    </script>
+        <a href="javascript:void(0)" class="header__burger menu-button-js">
+            <span class="burger-icon"></span>
+        </a>
+</div>
+</div>
